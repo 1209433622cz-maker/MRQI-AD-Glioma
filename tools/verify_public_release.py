@@ -6,6 +6,9 @@ def rows(path):
     with path.open(encoding='utf-8-sig',newline='') as f:return list(csv.DictReader(f,delimiter='\t'))
 def main():
     errors=[];manifest=rows(ROOT/'PUBLIC_MANIFEST.tsv')
+    allowed={r['path'] for r in manifest}|{'PUBLIC_MANIFEST.tsv'}
+    actual={p.relative_to(ROOT).as_posix() for p in ROOT.rglob('*') if p.is_file() and not any(x in {'.git','__pycache__'} for x in p.relative_to(ROOT).parts)}
+    if actual!=allowed:errors.append('public directory differs from complete manifest allowlist')
     for r in manifest:
         p=(ROOT/r['path']).resolve()
         if not p.is_relative_to(ROOT):errors.append('unsafe manifest path');continue
