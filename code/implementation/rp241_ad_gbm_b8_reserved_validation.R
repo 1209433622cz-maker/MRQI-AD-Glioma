@@ -1,0 +1,157 @@
+# Fixed508 external AD validation. B5/B7 files and discovery selection stay immutable.
+argv<-commandArgs(trailingOnly=TRUE)
+arg<-function(k){i<-match(k,argv);stopifnot(!is.na(i),i<length(argv));argv[i+1]}
+root<-normalizePath(arg('--root'),mustWork=TRUE);stamp<-'2026-10-14'
+qa<-'--qa-only'%in%argv;execute<-'--execute'%in%argv;stopifnot(!(qa&&execute))
+Sys.setenv(OPENBLAS_NUM_THREADS='1',OMP_NUM_THREADS='1',MKL_NUM_THREADS='1')
+suppressPackageStartupMessages(library(DESeq2));suppressPackageStartupMessages(library(jsonlite))
+stopifnot(as.character(getRversion())=='4.1.2',as.character(packageVersion('DESeq2'))=='1.34.0')
+putjson<-function(x,p){stopifnot(!file.exists(p));writeLines(toJSON(x,auto_unbox=TRUE,pretty=TRUE,na='null',digits=16),p,useBytes=TRUE)}
+puttable<-function(x,p){stopifnot(!file.exists(p));write.table(x,p,sep='\t',quote=FALSE,row.names=FALSE,na='NA')}
+hash<-function(p){stopifnot(file.exists(p));v<-system2('sha256sum',shQuote(p),stdout=TRUE);stopifnot(length(v)==1);substr(v,1,64)}
+bool<-function(x)toupper(as.character(x))=='TRUE'
+full_adjust<-function(p,method){z<-rep(NA_real_,length(p));ok<-is.finite(p);z[ok]<-p.adjust(p[ok],method=method,n=length(p));z}
+direction_p<-function(beta,p,direction){
+ z<-rep(NA_real_,length(p));valid<-is.finite(beta)&is.finite(p);stopifnot(all(p[valid]>=0&p[valid]<=1))
+ positive<-direction=='R1_AD_UP_HOST_TUMOR_DOWN';stopifnot(all(direction%in%c('R1_AD_UP_HOST_TUMOR_DOWN','R2_AD_DOWN_HOST_TUMOR_UP')))
+ z[valid]<-ifelse((beta[valid]>0)==positive[valid],p[valid]/2,1-p[valid]/2)
+ zero<-valid&beta==0;stopifnot(all(p[zero]==1));z[zero]<-.5;z
+}
+fit_model<-function(k,m){
+ stopifnot(!anyNA(k),all(k>=0),all(k==floor(k)),!anyDuplicated(rownames(k)),identical(colnames(k),rownames(m)))
+ m$sex<-factor(m$sex,levels=c('F','M'));m$diagnosis<-factor(m$analysis_diagnosis,levels=c('Old','AD'))
+ mm<-model.matrix(~sex+age+RIN+PMI+diagnosis,m);stopifnot(qr(mm)$rank==6)
+ d<-DESeqDataSetFromMatrix(k,m,~sex+age+RIN+PMI+diagnosis)
+ d<-DESeq(d,test='Wald',fitType='parametric',betaPrior=FALSE,minReplicatesForReplace=Inf,parallel=FALSE,quiet=TRUE)
+ actual<-attr(dispersionFunction(d),'fitType');if(!identical(actual,'parametric'))stop('HOLD_PARAMETRIC_FIT_DRIFT: ',actual)
+ stopifnot(identical(counts(d),k))
+ z<-results(d,contrast=c('diagnosis','AD','Old'),alpha=.05,independentFiltering=FALSE)
+ converged<-mcols(d)$betaConv;stopifnot(length(converged)==nrow(k))
+ declared<-mcols(d)$maxCooks;if(is.null(declared))declared<-rep(NA_real_,nrow(k))
+ cooks<-assays(d)[['cooks']];stopifnot(!is.null(cooks))
+ rawmax<-apply(cooks,1,function(x)if(any(is.finite(x)))max(x[is.finite(x)]) else NA_real_)
+ eligible<-get('nOrMoreInCell',envir=asNamespace('DESeq2'))(mm,n=3)
+ cutoff<-qf(.99,ncol(mm),nrow(mm)-ncol(mm))
+ effective<-z$pvalue;effective[is.na(converged)|!converged|!is.finite(effective)]<-NA_real_
+ rr<-data.frame(source_gene=rownames(k),baseMean=z$baseMean,log2FoldChange_AD_minus_Old=z$log2FoldChange,lfcSE=z$lfcSE,Wald_statistic=z$stat,
+  model_raw_pvalue=z$pvalue,pvalue=effective,CI95_lower_log2=z$log2FoldChange-qnorm(.975)*z$lfcSE,CI95_upper_log2=z$log2FoldChange+qnorm(.975)*z$lfcSE,
+  beta_converged=converged,declared_maxCooks=declared,maximum_raw_Cook=rawmax,default_Cook_cutoff=cutoff,
+  raw_Cook_above_default_cutoff=is.finite(rawmax)&rawmax>cutoff,
+  p_value_status=ifelse(is.na(converged)|!converged,'BETA_NOT_CONVERGED',ifelse(!is.finite(z$pvalue),'P_MISSING_COOKS_OR_MODEL','TESTED_FINITE_P')),
+  source_role='RESERVED_VALIDATION_SOURCE_USED__DO_NOT_RESELECT_TARGETS_HERE')
+ list(dds=d,result=rr,fit=actual,eligible_Cook_rows=sum(eligible))
+}
+candidate_result<-function(source,coverage){
+ stopifnot(nrow(coverage)==508,!anyDuplicated(coverage$HGNC_ID))
+ index<-match(coverage$GSE159699_exact_source_row,source$source_gene)
+ eligible<-bool(coverage$source_primary_measurable);stopifnot(!anyNA(index[eligible]))
+ index[!eligible]<-NA_integer_;z<-source[index,,drop=FALSE]
+ rr<-cbind(coverage,z[,setdiff(colnames(z),'source_gene'),drop=FALSE]);rownames(rr)<-NULL
+ rr$validation_testability<-ifelse(!bool(coverage$exact_source_row_present),'NOT_TESTABLE_IDENTITY_ABSENT_OR_CONFLICT',
+  ifelse(!eligible,'NOT_TESTABLE_PRESET_COUNT_FILTER',ifelse(!is.finite(rr$pvalue),'NOT_TESTABLE_EFFECT_OR_P_MISSING','TESTED')))
+ rr$expected_AD_direction<-ifelse(rr$direction=='R1_AD_UP_HOST_TUMOR_DOWN','UP','DOWN')
+ rr$one_sided_P<-direction_p(rr$log2FoldChange_AD_minus_Old,rr$pvalue,rr$direction)
+ rr$BH_full508<-full_adjust(rr$one_sided_P,'BH');rr$BY_full508<-full_adjust(rr$one_sided_P,'BY')
+ correct<-ifelse(rr$expected_AD_direction=='UP',rr$log2FoldChange_AD_minus_Old>0,rr$log2FoldChange_AD_minus_Old<0)
+ rr$primary_status<-ifelse(rr$validation_testability!='TESTED','NOT_TESTABLE',
+  ifelse(correct&is.finite(rr$BH_full508)&rr$BH_full508<.05,'AD_DIRECTION_SUPPORTED_BH',
+  ifelse(!correct,'CONFLICT_DIRECTION','DIRECTION_CONCORDANT_NOT_FDR_SUPPORTED')))
+ rr$independent_AD_effect_opened<-eligible;rr$full_validation_direction_family<-508L
+ rr
+}
+models<-function(m){
+ answer<-list(M0_AD12_OLD10=seq_len(nrow(m)),S1_COMMON_AGE20=which(m$age>=61&m$age<=77))
+ for(id in m$sample_id)answer[[paste0('LODO_',id)]]<-which(m$sample_id!=id)
+ stopifnot(length(answer)==24);answer
+}
+
+if(qa){
+ marker<-file.path(root,'0_admin/validation/RP241_AD_GBM_B8_Synthetic_Statistical_QA_2026-10-14.json');stopifnot(!file.exists(marker))
+ dest<-file.path(root,'0_admin/audit/RP241_AD_GBM_B8_Synthetic_QA_2026-10-14');stopifnot(!dir.exists(dest));dir.create(dest)
+ set.seed(20261014+128);n<-22L;g<-1200L
+ m<-data.frame(sample_id=sprintf('SYNTHETIC_DONOR%02d',1:22),sex=rep('M',22),age=c(73,63,62,68,66,72,76,74,70,75,61,64,65,66,68,70,72,73,75,76,78,79),
+  RIN=runif(22,6,9),PMI=runif(22,5,30),analysis_diagnosis=c(rep('Old',10),rep('AD',12)))
+ m$sex[c(10,18)]<-'F';rownames(m)<-m$sample_id
+ base<-exp(seq(log(100),log(2000),length.out=g));library<-exp(rnorm(n,0,.12));mu<-outer(base,library)
+ mu[1:40,m$analysis_diagnosis=='AD']<-mu[1:40,m$analysis_diagnosis=='AD']*4
+ mu[41:80,m$analysis_diagnosis=='AD']<-mu[41:80,m$analysis_diagnosis=='AD']/4
+ k<-matrix(rnbinom(g*n,mu=as.vector(mu),size=rep(1/(.02+5/base),n)),g,n)
+ k<-rbind(k,matrix(sample(0:3,20*n,replace=TRUE),20,n),matrix(c(rep(10L,11),rep(0L,11)),1,n),matrix(c(rep(10L,10),rep(0L,12)),1,n))
+ rownames(k)<-sprintf('SYNTHETIC_GENE%04d',seq_len(nrow(k)));colnames(k)<-m$sample_id;storage.mode(k)<-'integer'
+ keep<-rowSums(k>=10)>=11;stopifnot(all(keep[1:g]),!any(keep[(g+1):(g+20)]),keep[g+21],!keep[g+22],sum(keep)==1201)
+ sources<-c(rownames(k)[1:456],rownames(k)[1201:1212],rep('',40))
+ coverage<-data.frame(HGNC_ID=sprintf('SYNTHETIC_ID%03d',1:508),HGNC_symbol=sprintf('SYNTHETIC_SYMBOL%03d',1:508),
+  GSE159699_exact_source_row=sources,direction=rep(c('R1_AD_UP_HOST_TUMOR_DOWN','R2_AD_DOWN_HOST_TUMOR_UP'),254),
+  exact_source_row_present=c(rep(TRUE,468),rep(FALSE,40)),source_primary_measurable=c(rep(TRUE,456),rep(FALSE,52)))
+ coverage$direction[1:40]<-'R1_AD_UP_HOST_TUMOR_DOWN';coverage$direction[41:80]<-'R2_AD_DOWN_HOST_TUMOR_UP'
+ stopifnot(isTRUE(all.equal(full_adjust(c(.001,.01,NA_real_),'BH'),c(.003,.015,NA_real_))))
+ checks<-list();ms<-models(m);kk<-k[keep,,drop=FALSE]
+ for(name in names(ms)){
+  ii<-ms[[name]];cat(format(Sys.time()),'SYNTHETIC_START',name,'\n');flush.console()
+  fit<-fit_model(kk[,ii,drop=FALSE],m[ii,,drop=FALSE]);val<-candidate_result(fit$result,coverage)
+  stopifnot(nrow(val)==508,sum(is.finite(val$one_sided_P))==456,sum(val$validation_testability!='TESTED')==52,all(val$full_validation_direction_family==508))
+  up<-mean(val$log2FoldChange_AD_minus_Old[1:40]>0);down<-mean(val$log2FoldChange_AD_minus_Old[41:80]<0);stopifnot(up>=.9,down>=.9)
+  if(name=='M0_AD12_OLD10'){
+   rev<-results(fit$dds,contrast=c('diagnosis','Old','AD'),alpha=.05,independentFiltering=FALSE)
+   stopifnot(max(abs(rev$log2FoldChange+fit$result$log2FoldChange_AD_minus_Old),na.rm=TRUE)<1e-9)
+   ok<-is.finite(rev$pvalue)&is.finite(fit$result$model_raw_pvalue);stopifnot(max(abs(rev$pvalue[ok]-fit$result$model_raw_pvalue[ok]))<1e-9)
+   puttable(val,file.path(dest,'SYNTHETIC_Primary_All508_Validation.tsv'));puttable(fit$result,file.path(dest,'SYNTHETIC_Primary_All1201_Source.tsv'))
+  }
+  checks[[name]]<-data.frame(model=name,samples=length(ii),rank=6,df=length(ii)-6,source_family=1201,validation_family=508,
+    valid_candidates=456,missing_candidates_retained=52,positive_fixture_correct=up,negative_fixture_correct=down,fit=fit$fit,raw_counts_unchanged=TRUE)
+  cat(format(Sys.time()),'SYNTHETIC_COMPLETE',name,'\n');flush.console();rm(fit);gc()
+ }
+ puttable(do.call(rbind,checks),file.path(dest,'SYNTHETIC_All24_Model_QA.tsv'))
+ putjson(list(status='PASS_SYNTHETIC_ONLY',qa_at=format(Sys.time(),'%Y-%m-%dT%H:%M:%S%z'),models=24,raw_synthetic_genes=1222,source_family=1201,
+   validation_family=508,valid_candidates=456,missing_family_retained=52,seed=20261142,filter11_pass=TRUE,filter10_excluded=TRUE,
+   reverse_contrast_beta_and_P_verified=TRUE,actual_GSE159699_effects_tested=0),marker)
+ writeLines(capture.output(sessionInfo()),file.path(dest,'R_sessionInfo.txt'));cat('ALL24_SYNTHETIC_MODELS_AND_FULL508_QA_PASS\n');quit(status=0)
+}
+
+freeze_path<-file.path(root,'0_admin/protocol/RP241/RP241_AD_GBM_B8_Execution_Freeze_2026-10-14.json')
+stopifnot(file.exists(freeze_path));fr<-fromJSON(freeze_path,simplifyVector=FALSE)
+for(p in names(fr$sha256))stopifnot(identical(hash(file.path(root,p)),fr$sha256[[p]]))
+for(rel in c('0_admin/protocol/RP241/RP241_AD_B5_Reserved_Source_Model_Execution_Freeze_2026-10-14.json','0_admin/protocol/RP241/RP241_AD_GBM_B7_Reserved_Validation_Candidates_Freeze_2026-10-14.json')){
+ old<-fromJSON(file.path(root,rel),simplifyVector=FALSE);for(p in names(old$sha256))stopifnot(identical(hash(file.path(root,p)),old$sha256[[p]]))
+}
+pre<-file.path(root,'3_results/rp241_ad_gbm_b8_preflight')
+m<-read.delim(file.path(pre,'Primary22_Metadata_2026-10-14.tsv'),check.names=FALSE);rownames(m)<-m$sample_id
+kall<-as.matrix(read.delim(file.path(root,'1_data/transcriptomics/alzheimer/GSE159699/processed/GSE159699_summary_count.star.txt.gz'),row.names=1,check.names=FALSE))
+stopifnot(nrow(kall)==27130,ncol(kall)==30,!anyDuplicated(rownames(kall)),all(kall>=0),all(kall==floor(kall)))
+k<-kall[,m$sample_id,drop=FALSE];gf<-read.delim(file.path(pre,'All27130_Fixed_Primary_Gene_Filter_2026-10-14.tsv'))
+keep<-rowSums(k>=10)>=11;gf_values<-toupper(as.character(gf$kept));stopifnot(all(gf_values%in%c('TRUE','FALSE')))
+stopifnot(identical(gf$source_gene,rownames(k)),identical(gf_values=='TRUE',unname(keep)),sum(keep)==17657)
+k<-k[keep,,drop=FALSE];storage.mode(k)<-'integer'
+candidates<-read.delim(file.path(pre,'All508_Reserved_Validation_Measurability_Identity_Ledger_2026-10-14.tsv'),check.names=FALSE)
+stopifnot(nrow(candidates)==508,sum(bool(candidates$source_primary_measurable))==456)
+qa_receipt<-file.path(root,'0_admin/validation/RP241_AD_GBM_B8_Synthetic_Statistical_QA_2026-10-14.json')
+independent<-file.path(root,'0_admin/validation/RP241_AD_GBM_B8_PreEffect_Independent_Validation_2026-10-14.json')
+admission<-file.path(root,'0_admin/decision/RP241_AD_GBM_B8_Source_Admission_2026-10-14.json')
+if(!all(file.exists(c(qa_receipt,independent,admission)))){
+ cat('HOLD_B8_QA_OR_SOURCE_ADMISSION_REQUIRED; no real AD effects\n');quit(status=if(execute)2 else 0)
+}
+stopifnot(fromJSON(qa_receipt)$status=='PASS_SYNTHETIC_ONLY',fromJSON(independent)$status=='PASS')
+q<-fromJSON(admission);stopifnot(q$status=='GO_GSE159699_RESERVED_AD_VALIDATION',isTRUE(q$execution_allowed),q$validation_family==508,isTRUE(q$user_reported_coauthor_review))
+stopifnot(identical(q$counts_sha256,hash(file.path(root,'1_data/transcriptomics/alzheimer/GSE159699/processed/GSE159699_summary_count.star.txt.gz'))))
+if(!execute){cat('B8_REAL_INPUT_SOURCE_REVIEW_AND_QA_PREFLIGHT_PASS; no real effect execution requested\n');quit(status=0)}
+dest<-file.path(root,'3_results/rp241_ad_gbm_b8_reserved_validation');stopifnot(!dir.exists(dest));stopifnot(dir.create(dest))
+puttable(data.frame(source_gene=rownames(k),source_primary_measurable=TRUE),file.path(dest,'Primary_Fixed_Source_Gene_Universe.tsv'))
+ms<-models(m);summaries<-list()
+for(name in names(ms)){
+ ii<-ms[[name]];cat(format(Sys.time()),'REAL_RESERVED_VALIDATION_START',name,'\n');flush.console()
+ fit<-tryCatch(fit_model(k[,ii,drop=FALSE],m[ii,,drop=FALSE]),error=function(e){putjson(list(status='HOLD_MODEL_TECHNICAL_FAILURE',model=name,message=conditionMessage(e)),file.path(dest,paste0(name,'_Technical_Hold.json')));stop(e)})
+ val<-candidate_result(fit$result,candidates)
+ puttable(fit$result,file.path(dest,paste0(name,'_All17657_Source_Diagnostics.tsv')))
+ puttable(val,file.path(dest,paste0(name,'_All508_Reserved_Direction_Results.tsv')))
+ puttable(data.frame(sample_id=colnames(fit$dds),size_factor=sizeFactors(fit$dds)),file.path(dest,paste0(name,'_Size_Factors.tsv')))
+ saveRDS(fit$dds,file.path(dest,paste0(name,'_DESeq2_Model.rds')),compress=TRUE)
+ summaries[[name]]<-data.frame(model=name,samples=length(ii),rank=6,df=length(ii)-6,source_family=17657,validation_family=508,
+   source_finite_P=sum(is.finite(fit$result$pvalue)),candidate_finite_P=sum(is.finite(val$one_sided_P)),
+   candidate_missing_P=sum(!is.finite(val$one_sided_P)),BH_supported=sum(val$BH_full508<.05,na.rm=TRUE),BY_supported=sum(val$BY_full508<.05,na.rm=TRUE),
+   conflict_direction=sum(val$primary_status=='CONFLICT_DIRECTION',na.rm=TRUE),eligible_default_Cook_rows=fit$eligible_Cook_rows,fit=fit$fit)
+ cat(format(Sys.time()),'REAL_RESERVED_VALIDATION_COMPLETE',name,'\n');flush.console();rm(fit);gc()
+}
+puttable(do.call(rbind,summaries),file.path(dest,'All24_Models_Execution_Summary.tsv'))
+putjson(list(status='ALL24_RESERVED_AD_MODELS_COMPLETE__508_DIRECTION_FAMILY_RETAINED',completed_at=format(Sys.time(),'%Y-%m-%dT%H:%M:%S%z'),
+ source_family=17657,validation_family=508,models=24,source_effects_opened=TRUE,GBM_replication_completed=FALSE,causal_targets_confirmed=0),file.path(dest,'Execution_Receipt.json'))
+writeLines(capture.output(sessionInfo()),file.path(dest,'R_sessionInfo.txt'))

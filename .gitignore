@@ -1,0 +1,23 @@
+# The public mirror is allowlisted; never stage canonical data or applications.
+__pycache__/
+*.pyc
+.venv/
+.env
+*.pem
+*.key
+*.fastq*
+*.bam
+*.h5
+*.tar
+*.zip
+*.rds
+*.RDS
+*.RData
+*.pdf
+*.docx
+*.xlsx
+1_data/
+0_admin/
+private/
+controlled/
+applications/

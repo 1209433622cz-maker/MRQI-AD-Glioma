@@ -1,0 +1,13 @@
+claim_id	adjudication	claim_under_review	supporting_observations	limits	recommended_wording_or_action
+C01	SUPPORTED_WITH_SCOPE	在特定尸检AD脑区与历史肿瘤–同人宿主资料中，发现并得到限定跨来源支持的反向组织表达候选。	发现508方向；GSE159699原508检验族形成81；GSE13276原81检验族形成43。	81/43由相应验证结果形成；不视作新复制率；对照、脑区与现代诊断不同。	可用于论文主结果；保留完整508→81→43选择历史。
+C02	NOT_SUPPORTED_AS_GENERALIZATION	原43在所有AD脑区稳定复制。	BA17主模型29方向一致、12点反向、2缺失，0/43 FDR。	未过FDR不等于无效；但不支持普遍跨脑区确认。	改写为脑区/来源受限的表达证据；不改选相对尺度模型。
+C03	SUPPORTED_EXPLORATORY_CONTEXT	部分候选具有AD供者层谱系语境。	GSE174367主258检验有12基因×谱系BH支持/9基因；BY0；加RIN单基因支持0。EX AMS43主/加RIN均BH18支持。	单基因与程序不是同一检验；六谱系同源、不是六个队列；未建立同细胞双病反向。	并列展示主/敏感性；不把九基因升为新主候选。
+C04	SUPPORTED_DESCRIPTIVE_CONTEXT	反向组织程序与GBM恶性/宿主细胞区室定位相容。	43中39/41可比较均值峰相同，2不同/2不可比；全部供者均同峰仅17/43；9基因患者峰受逐region删除影响。	状态峰描述不是疾病效应或组成因果归因；共同state患者仅10/7。	可称区室相关/患者异质性；不能称已证明是组成导致反向共病。
+C05	SUPPORTED_WITH_SOURCE_CONFOUNDING	公开GBM蛋白对部分RNA方向提供限定支持，同时存在真实冲突。	主43中36可估计，22 OLS-BH同向、13 HC3维持；ARC和SUN2主OLS显著反向。	实际BH分母36；CPTAC/GTEx采集source与疾病重合，df8、高杠杆；历史诊断。	保留定量与冲突；不称纯疾病效应或独立健康匹配验证。
+C06	SUPPORTED_DESCRIPTIVE_ONLY	空间资料可描述肿瘤内的区室模式及患者差异。	GSE237183三对比N2/4/3；前两对各39/43均值符合预期，但第二对25/43患者方向混合。	不做P/FDR；RNA派生标签；CSRP1/QDPR主候选参与标签程序；非病理独立真值。	可用于定位图；不称39基因空间复制成功。
+C07	NOT_ESTABLISHED	AD–GBM存在已验证的同一细胞内拮抗机制。	当前AD疾病对照谱系与GBM tumour-only状态比较的估计对象不同。	没有相同可比谱系的两病独立疾病-control反向效应链。	不使用cell-intrinsic antagonism已成立的措辞。
+C08	NOT_ESTABLISHED	这些表达变化证明AD降低GBM风险或GBM保护AD。	本轮为表达/定位证据整合，未新增临床风险、疾病MR或中介分析。	不同来源组织比较不能识别临床逆向共病因果；旧遗传限制仍在。	主文使用reciprocal expression/compartment association等限定语言。
+C09	NOT_EXECUTED_FOR_CURRENT81	当前81/43已被逐基因遗传证据证实或全部遗传否定。	旧310/QTL结果保留；当前81/43新的target-causal投影未执行；Tier1未建立。	旧程序阴性不能移作当前每基因的阴性；表达阳性不能移作遗传阳性。	遗传作为明确缺口，亦不全局封锁合格蛋白/空间工作。
+C10	SENSITIVITY_ONLY	FOXO4在BA17获得主分析确认。	主M0 q43=.342480108；预声明M6相对尺度q43=.006705796。	只有尺度敏感性达到阈值；不能用较有利q替代主规则。	保留为尺度依赖案例，不改候选或模型。
+C11	ADMINISTRATIVE_PENDING	已完成DeepConsensus独立AD蛋白验证。	用户确认精确study申请尚未提交。	未授权病例或限制衍生内容不能输入工具；登录不等于获批。	复用IDU，真实协作者/DUC/提交后在批准环境执行。
+C12	NEXT_ACTION	以来源/区室依赖的反向表达研究推进主结果定稿。	完整81/43、2511来源模型记录、限定复制与冲突均已对账。	不得为全链阳性重筛候选、删冲突、换模型；目前无因果或治疗效果主张。	EDA6完成主文Results/图例和补充表；独立AD蛋白申请并行优先。

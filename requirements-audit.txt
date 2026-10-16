@@ -1,0 +1,2 @@
+# Public release verification uses Python standard library only.
+# Statistical reconstruction has separate, partly historical dependencies; see docs/REPRODUCIBILITY.md.
