@@ -1,7 +1,5 @@
-# 研究更新规则
+# Contributions
 
-- 新来源须先说明独立供者、病例／对照定义、脑区、平台、模型与访问条件。
-- 保留完整81／43、原检验家族、缺失、冲突和未执行；不要按结果删行或缩小FDR分母。
-- 提交代码时说明输入／参数／环境／验证；不要把新脚本编译通过写成原始数据科学复现。
-- 不提交任何患者级、受控、签署或身份材料。公开Issue和PR也适用。
-- 改变研究主张需要真实作者审阅；机器不能代签。
+Use a focused issue or pull request to propose a correction, identifying the exact source and affected evidence role. Preserve all81／43 genes, negative/conflicting/missing states and original multiplicity families. A new source, model, normalization or causal interpretation is a separate scientific decision, not an editorial correction.
+
+Do not upload raw or controlled data, participant/Run records, private logs, signed applications, credentials or third-party full texts. Run the standard-library tools/verify_candidate.py after an authorized change and regenerate manifests only from the reviewed allowlist. Public availability does not confer a new code or data license. This document does not authorize automated messaging or submissions.

@@ -1,0 +1,10 @@
+study	all_cases	GBM_cases	nonGBM_cases	controls	source	pdf_page
+UK	631	270	361	2699	Melin Supplementary Table 2	89
+French	1423	430	993	1190	Melin Supplementary Table 2	89
+German	846	431	415	1310	Melin Supplementary Table 2	89
+MDA	1175	652	523	2236	Melin Supplementary Table 2	89
+SFAGS	677	511	166	3940	Melin Supplementary Table 2	89
+GliomaScan	1653	903	472	2725	Melin Supplementary Table 2	89
+GICC	4572	2468	1897	3286	Melin Supplementary Table 2	89
+UCSF_Mayo	1519	526	992	804	Melin Supplementary Table 2	89
+SUM_OF_EIGHT_ROWS	12496	6191	5819	18190	Arithmetic only; no substitution into old analysis	89

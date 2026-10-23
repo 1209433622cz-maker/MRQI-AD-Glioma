@@ -1,0 +1,7 @@
+accession	sample_records	last_update	source_role	GBM_normal_DE_admitted	summary_then_series_scope
+GSE344878	18	Oct 19 2026	Pediatric tumour preclinical cell/xenograft drug model, not adult GBM-normal brain comparison	False	Official summary plus exact Series design inspected; no expression values read
+GSE327131	52	Oct 22 2026	Pediatric posterior fossa ependymoma; different disease/model	False	Official summary plus exact Series design inspected; no expression values read
+GSE335248	12	Oct 19 2026	U251 knockdown cell model; no clinical normal-brain control	False	Official summary plus exact Series design inspected; no expression values read
+GSE324656	24	Oct 21 2026	Therapy intervention model; no matched adult clinical GBM-normal-brain design established	False	Official summary plus exact Series design inspected; no expression values read
+GSE320374	12	Oct 21 2026	GIC/drug treatment context; not an untreated GBM-normal-brain comparison	False	Official summary plus exact Series design inspected; no expression values read
+GSE328441	237	Oct 22 2026	DNA methylation biopsy classification, not mRNA normal-control replacement	False	Official summary plus exact Series design inspected; no expression values read

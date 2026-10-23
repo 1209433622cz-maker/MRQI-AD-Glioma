@@ -1,0 +1,11 @@
+paragraph_id	disclosed_fact	evidence_files	interpretation_limit	new_estimation
+E88M01	10/57 analyzed,59 exposure;exact/LD threshold;2 missing reverse outcomes	diagnostics/All570_CrossDirection_Exact_And_LD_Overlap.tsv;diagnostics/All590_ExposureSide_CrossDirection_LD.tsv	not81/43 target validation	False
+E88M02	R2 numerical scale, published N versus exact source binding	diagnostics/All12_GBM_R2_N_EAF_PrimarySource_Adjudication.tsv;diagnostics/R2_LD_I2_FamilialRisk_Semantic_Dictionary.tsv	no author-error inference;no liability substitution	False
+E88M03	diagnosed/proxy AD,EAF provenance,formalSteiger not run	diagnostics/Steiger_Exact_Source_Field_And_Phenotype_Gate.tsv;diagnostics/AD_Exact_Variant_CaseControl_Strata_GroupCounts.tsv	not strict AD;noSteigerP/PASS	False
+E88R01	import archived IVW/FE/MRE and exact/LD diagnostics	diagnostics/MR_Exact_And_StrongLD_Exclusion_Sensitivities.tsv;diagnostics/All590_ExposureSide_CrossDirection_LD.tsv	not a new estimate;max r2 0.775069 retained	False
+E88R02	12/12 sqrt match,0/12 square;24352vs24381;0/12 studyEAF,8/12referenceRAF	diagnostics/All12_GBM_R2_N_EAF_PrimarySource_Adjudication.tsv;diagnostics/Published_SampleSize_Version_And_Split_Ledger.tsv;diagnostics/Melin_Table2_Eight_Cohort_Count_Reconciliation.tsv	no fabricatedQCexplanation or referenceAF substitution	False
+D07	separate tissue expression,MR background and causal target claims	docs/CURRENT_MANUSCRIPT_WORKING_DRAFT.md;diagnostics/PrimarySource_Field_Gate.tsv	no population protection or same-cell mechanism	False
+E54R03	retain3donor technicalrepeat fact, remove their explicit identifiers	docs/CURRENT_MANUSCRIPT_WORKING_DRAFT.md	identity redaction only;date/group count/results unchanged	False
+AV01	last verified remote commit;freshquery not resolved	docs/EDA88_ARCHIVE_DISCLOSURE.md	no new push or remoteHEAD claim	False
+AV02	all81/43;1244to1207,37identityfields;43/57images;211actualscope	docs/IDENTITY_COLUMN_REDACTIONS.tsv;docs/All57_Figure_Disclosure_Status.tsv;docs/All211_Actual_Payload_Index_And_Local_Disclosure.tsv	candidate not already public;not211payloads	False
+AV03	17frozen-start scopes;R08differences;license/source restrictions	reproduction/All17_Route_Scope.tsv;RIGHTS_AND_SCOPE.md	not raw-to-paper selfcontained	False

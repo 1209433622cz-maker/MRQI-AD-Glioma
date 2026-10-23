@@ -1,0 +1,5 @@
+component	status	reason	formal_Steiger_p_produced	liability_grid_executed	scientific_no_go
+GBM_forward_exposure	FIELD_PARTIAL_LIABILITY_HOLD	Published instrument table has N=24352, no exact exposure EAF or source-matched case/control split; Melin overall 6191+18190=24381 cannot silently replace per-effect provenance	False	False	False
+strict_AD_forward_outcome	FIELD_AVAILABLE_WITH_PHENOTYPE_CAVEAT	Frozen FinnGen12545/483210 and aligned EAF available; standalone row does not close missing GBM exposure fields	False	False	False
+proxy_AD_reverse_exposure	FIELD_AVAILABLE_WITH_PHENOTYPE_CAVEAT	Exact variant-level n_cases/n_controls/EAF recovered from own raw file; proxy-inclusive meta-analysis is not strict clinical AD prevalence and must not borrow accession summary counts without matching	False	False	False
+GBM_reverse_outcome	FIELD_AVAILABLE_WITH_PHENOTYPE_CAVEAT	FinnGen467/372159 and exact outcome EAF available after fixed57 scan; reverse proxy liability interpretation remains limited	False	False	False

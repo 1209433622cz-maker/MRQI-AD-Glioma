@@ -1,0 +1,5 @@
+source	column	meaning	forbidden_use
+Liu Supp Table 1, all12 GBM	R2	Numerically |r| proxy; author formula not explicit	Do not input directly as phenotype variance or liability R2
+Melin Supp Tables 3 and 5	r2 / Dprime	Reference-panel LD between variants; Table 5 uses 1000G EUR Phase 1 proxies	Not variance explained in GBM; not EAF; not EDA86 Phase3 LD output
+Melin Data1	I2	Between-study heterogeneity statistic	Not genetic R2 or allele frequency
+Melin Supp Table7	percent risk	Share of familial risk relative to external family-risk estimates	26.83 percent is not population liability variance; do not substitute into Steiger

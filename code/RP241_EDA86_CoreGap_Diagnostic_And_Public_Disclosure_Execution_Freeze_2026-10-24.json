@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-24",
+  "frozen_utc": "2026-10-23T20:52:51.834612+00:00",
+  "scope": "Known-result RP241 diagnostic reanalysis; not preregistration or a new exposure selection",
+  "forward_input": "3_results/phase0t_a2/Phase0T_A2_FinnGen_R13_G6_AD_STRICT_Harmonised_2026-09-27.tsv",
+  "reverse_input": "3_results/phase0w_b1/Phase0W_B1_AD_to_C3GBM_Harmonised_2026-09-27.tsv",
+  "forward_n": 10,
+  "reverse_n": 57,
+  "source_selection_reverse_n": 59,
+  "analysed_IV_union": 67,
+  "thresholds": {
+    "cross_direction_strong_LD_r2": 0.8,
+    "old_clump_r2": 0.001,
+    "old_clump_window_kb": 10000
+  },
+  "exact_overlap_rule": "Drop exact intersecting rsIDs from both analysed directions; no proxy rescue or outcome re-selection",
+  "LD_rule": "PLINK all union pairs inter-chr; rsID and allele-set concordance to EUR BIM required; compare cross-direction pairs; drop both endpoints at r2>=0.8 in sensitivity",
+  "primary_and_sensitivity": "Original MR stays primary; exact-excluded and strong-LD-excluded IVW-FE/MRE sensitivities separately report k/F/CI/Q; no winner selection",
+  "no_overlap_semantics": "Empty exclusion must reproduce original estimator and is labelled identical-set sensitivity, never new replication",
+  "Steiger": "Record exact EAF/case/control/N/build/proxy provenance first; liability analysis cannot silently borrow counts or frequencies from a different source",
+  "liability_grid_if_eligible": {
+    "AD_or_proxy_assumed_prevalence": [
+      0.01,
+      0.02,
+      0.05,
+      0.1
+    ],
+    "GBM_assumed_prevalence": [
+      1e-05,
+      0.0001,
+      0.001
+    ]
+  },
+  "grid_interpretation": "Illustrative analyst assumptions, not epidemiological prevalence estimates; no liability inference when phenotype/effect fields cannot be matched",
+  "public_scope": "Candidate preparation only; no automatic push; exclude participant IDs/rows, leave-one person rows and identity lists, private application/DUC, credentials and third-party full-text/raw",
+  "preserve": "Original full81/43, all effects/P/q, negatives/conflicts/missingness; no new transcriptomic DE or reclassification of historical diagnoses",
+  "input_manifest": "0_admin/validation/rp241_eda86_core_gap_public_archive_2026-10-24/Protected_Pre_Action_Input_Fingerprints.tsv"
+}

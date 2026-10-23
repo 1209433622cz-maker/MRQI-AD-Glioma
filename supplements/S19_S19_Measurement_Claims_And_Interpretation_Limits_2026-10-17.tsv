@@ -1,0 +1,11 @@
+claim_id	subject	frozen_fact	source_in_EDA14	manuscript_locations	interpretation_limit
+T01	Source data frozen	7154523 rows;60columns;115Runs;all44 observed	Full_Table_Stream_Receipt.json	M11C;R6C;Fig8-10	processed measurement coverage; not new participant or effect count
+T02	Exact Run bridge	115/115 exact;0missing retained;114retained	Run_Metadata_Join_Gate.json	M11B-C;R6C;Fig10	keep original22 excluded and21 retained; do not substitute
+T03	Source row and gene denominators	44 source rows;41 genes;81 and43 complete	All44_Full_Observed_Peptide_Technical_Audit.tsv	R6C;S14-S18	row count is not gene count, patient count or support count
+T04	I/L gene-specific sequences	36 rows >=2;7 rows=1;1 row=0	Complete44_Descriptive_Reconciliation_Facts.json	M11C;R6C;Fig8-9	only within full authorFASTA; not a new eligibility rule
+T05	Entry and isoform limits	11 entries any entry-specific;all11 suffix entries have0	Complete44_Descriptive_Reconciliation_Facts.json	M11C;R6C;Fig9	no functional isoform confirmation or inference of absence
+T06	ARC comparison scope	two observed sequences;originalfourusedcounts1	All44_Every_Observed_Peptide_FourGroup_Coverage_NoNewTests.tsv	M11B-C;R6C;S18	global2 cannot replace percomparison1; GBM conflict retained
+T07	Count scopes disagree	40/44 global equal;21/140 comparison equal	Complete44_Descriptive_Reconciliation_Facts.json	R6C;S18c	do not claim source error or actual filter reproduction
+T08	Actual model status	NOT_REPRODUCED	All44_Full_Observed_Peptide_Technical_Audit.tsv	M11B-C;M14;R6C;conclusion	MSDAP final used/filter/fallback logs not reproduced; no new DE
+T09	Biological boundaries	old33/22 eligibility and effects/P/q unchanged	S14a/S14b equality receipt	M13-14;R6B-C;conclusion;all full tables	ARC/QDPR/APEX1/ITSN2/PRPF4; BA17/cell/spatial/source limitations retained
+T10	Author review	齐腾20261017 specific newtechnical acceptance	EDA15 specific review record	M02;report;decision	user-reported internal review, not signature/external authorization

@@ -1,0 +1,10 @@
+field	finding	status
+Frozen GBM N	24352 is literally reported by Liu Table 1 and all 12 supplement rows	CLOSED_DECLARATION
+GBM declared case/control split	6183/18169 in Liu Methods and Table 1	CLOSED_PUBLISHED_DECLARATION_ONLY
+Original Melin GBM total	6191/18190 = 24381; differs by 8 cases + 21 controls	CONFIRMED_DIFFERENT_TOTAL
+Between-release participant/QC mapping	No explicit explanation or exact per-SNP analytic case count in audited materials	TECHNICAL_UNRESOLVED
+Published R2 label semantics	No explicit author formula; 12/12 numerically match |r| proxy rather than squared proxy	PRESERVE_ORIGINAL_LABEL__DO_NOT_TREAT_AS_VARIANCE
+Melin RAF origin	1000G EUR reference in Supp Tables 3/4/7; 8 exact GBM IVs in audited lead tables	CLOSED_REFERENCE_ORIGIN__NOT_STUDY_EAF
+Exact study GBM EAF	0/12 study EAF in Liu supplementary instruments; no dense study-frequency release obtained	MISSING
+Liability Steiger	No prevalence method or release-matched frequency assumptions introduced	HOLD__NOT_RUN__NO_P_OR_PASS
+Primary MR / full81/43	Input bytes and effect results preserved; no new inference	UNCHANGED

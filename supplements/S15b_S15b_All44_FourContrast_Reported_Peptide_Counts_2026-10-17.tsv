@@ -1,0 +1,177 @@
+﻿HGNC_ID	HGNC_symbol	primary43	protein_id	source_xlsx_row	contrast	disease_contrast	global_unique_peptides_raw	used_peptides_raw	used_count_status	both_methods_have_author_effect	used_not_exceed_global_when_reported	peptide_sequences_available	actual_fallback_model_known	new_P_q
+HGNC:19071	ALYREF	False	Q86V81	5202	EA vs EOAD	True	3	3	AT_LEAST_TWO	True	True	False	False	False
+HGNC:19071	ALYREF	False	Q86V81	5202	LA vs LOAD	True	3	3	AT_LEAST_TWO	True	True	False	False	False
+HGNC:19071	ALYREF	False	Q86V81	5202	EA vs LA	False	3	3	AT_LEAST_TWO	True	True	False	False	False
+HGNC:19071	ALYREF	False	Q86V81	5202	EOAD vs LOAD	False	3	3	AT_LEAST_TWO	True	True	False	False	False
+HGNC:9570	PSME3	True	P61289-2	4941	EA vs EOAD	True	5	4	AT_LEAST_TWO	True	True	False	False	False
+HGNC:9570	PSME3	True	P61289-2	4941	LA vs LOAD	True	5	4	AT_LEAST_TWO	True	True	False	False	False
+HGNC:9570	PSME3	True	P61289-2	4941	EA vs LA	False	5	4	AT_LEAST_TWO	True	True	False	False	False
+HGNC:9570	PSME3	True	P61289-2	4941	EOAD vs LOAD	False	5	4	AT_LEAST_TWO	True	True	False	False	False
+HGNC:16629	RAPGEF3	True	O95398-3	6138	EA vs EOAD	True	2		NOT_REPORTED	False		False	False	False
+HGNC:16629	RAPGEF3	True	O95398-3	6138	LA vs LOAD	True	2		NOT_REPORTED	False		False	False	False
+HGNC:16629	RAPGEF3	True	O95398-3	6138	EA vs LA	False	2		NOT_REPORTED	False		False	False	False
+HGNC:16629	RAPGEF3	True	O95398-3	6138	EOAD vs LOAD	False	2		NOT_REPORTED	False		False	False	False
+HGNC:18116	KHDRBS1	False	Q07666	2016	EA vs EOAD	True	8	7	AT_LEAST_TWO	True	True	False	False	False
+HGNC:18116	KHDRBS1	False	Q07666	2016	LA vs LOAD	True	8	7	AT_LEAST_TWO	True	True	False	False	False
+HGNC:18116	KHDRBS1	False	Q07666	2016	EA vs LA	False	8	7	AT_LEAST_TWO	True	True	False	False	False
+HGNC:18116	KHDRBS1	False	Q07666	2016	EOAD vs LOAD	False	8	7	AT_LEAST_TWO	True	True	False	False	False
+HGNC:10666	STARD10	False	Q9Y365	2282	EA vs EOAD	True	3	3	AT_LEAST_TWO	True	True	False	False	False
+HGNC:10666	STARD10	False	Q9Y365	2282	LA vs LOAD	True	3	3	AT_LEAST_TWO	True	True	False	False	False
+HGNC:10666	STARD10	False	Q9Y365	2282	EA vs LA	False	3	3	AT_LEAST_TWO	True	True	False	False	False
+HGNC:10666	STARD10	False	Q9Y365	2282	EOAD vs LOAD	False	3	3	AT_LEAST_TWO	True	True	False	False	False
+HGNC:16991	CKAP4	True	Q07065	2061	EA vs EOAD	True	27	19	AT_LEAST_TWO	True	True	False	False	False
+HGNC:16991	CKAP4	True	Q07065	2061	LA vs LOAD	True	27	19	AT_LEAST_TWO	True	True	False	False	False
+HGNC:16991	CKAP4	True	Q07065	2061	EA vs LA	False	27	19	AT_LEAST_TWO	True	True	False	False	False
+HGNC:16991	CKAP4	True	Q07065	2061	EOAD vs LOAD	False	27	19	AT_LEAST_TWO	True	True	False	False	False
+HGNC:16922	AGAP1	True	A0A0U1RRF1	2407	EA vs EOAD	True	11	6	AT_LEAST_TWO	True	True	False	False	False
+HGNC:16922	AGAP1	True	A0A0U1RRF1	2407	LA vs LOAD	True	11	6	AT_LEAST_TWO	True	True	False	False	False
+HGNC:16922	AGAP1	True	A0A0U1RRF1	2407	EA vs LA	False	11	6	AT_LEAST_TWO	True	True	False	False	False
+HGNC:16922	AGAP1	True	A0A0U1RRF1	2407	EOAD vs LOAD	False	11	6	AT_LEAST_TWO	True	True	False	False	False
+HGNC:16922	AGAP1	True	E7EUN2	3816	EA vs EOAD	True	4	3	AT_LEAST_TWO	True	True	False	False	False
+HGNC:16922	AGAP1	True	E7EUN2	3816	LA vs LOAD	True	4	3	AT_LEAST_TWO	True	True	False	False	False
+HGNC:16922	AGAP1	True	E7EUN2	3816	EA vs LA	False	4	3	AT_LEAST_TWO	True	True	False	False	False
+HGNC:16922	AGAP1	True	E7EUN2	3816	EOAD vs LOAD	False	4	3	AT_LEAST_TWO	True	True	False	False	False
+HGNC:250	ADH1B	False	P00325	6157	EA vs EOAD	True	5		NOT_REPORTED	False		False	False	False
+HGNC:250	ADH1B	False	P00325	6157	LA vs LOAD	True	5		NOT_REPORTED	False		False	False	False
+HGNC:250	ADH1B	False	P00325	6157	EA vs LA	False	5		NOT_REPORTED	False		False	False	False
+HGNC:250	ADH1B	False	P00325	6157	EOAD vs LOAD	False	5		NOT_REPORTED	False		False	False	False
+HGNC:2469	CSRP1	True	P21291	4167	EA vs EOAD	True	7	4	AT_LEAST_TWO	True	True	False	False	False
+HGNC:2469	CSRP1	True	P21291	4167	LA vs LOAD	True	7	4	AT_LEAST_TWO	True	True	False	False	False
+HGNC:2469	CSRP1	True	P21291	4167	EA vs LA	False	7	4	AT_LEAST_TWO	True	True	False	False	False
+HGNC:2469	CSRP1	True	P21291	4167	EOAD vs LOAD	False	7	4	AT_LEAST_TWO	True	True	False	False	False
+HGNC:2469	CSRP1	True	E9PND2	5979	EA vs EOAD	True	1		NOT_REPORTED	False		False	False	False
+HGNC:2469	CSRP1	True	E9PND2	5979	LA vs LOAD	True	1		NOT_REPORTED	False		False	False	False
+HGNC:2469	CSRP1	True	E9PND2	5979	EA vs LA	False	1		NOT_REPORTED	False		False	False	False
+HGNC:2469	CSRP1	True	E9PND2	5979	EOAD vs LOAD	False	1		NOT_REPORTED	False		False	False	False
+HGNC:385	AKR1C2	False	P52895	2734	EA vs EOAD	True	12	5	AT_LEAST_TWO	True	True	False	False	False
+HGNC:385	AKR1C2	False	P52895	2734	LA vs LOAD	True	12	5	AT_LEAST_TWO	True	True	False	False	False
+HGNC:385	AKR1C2	False	P52895	2734	EA vs LA	False	12	5	AT_LEAST_TWO	True	True	False	False	False
+HGNC:385	AKR1C2	False	P52895	2734	EOAD vs LOAD	False	12	5	AT_LEAST_TWO	True	True	False	False	False
+HGNC:27310	FLCN	True	Q8NFG4	4971	EA vs EOAD	True	5	4	AT_LEAST_TWO	True	True	False	False	False
+HGNC:27310	FLCN	True	Q8NFG4	4971	LA vs LOAD	True	5	4	AT_LEAST_TWO	True	True	False	False	False
+HGNC:27310	FLCN	True	Q8NFG4	4971	EA vs LA	False	5	4	AT_LEAST_TWO	True	True	False	False	False
+HGNC:27310	FLCN	True	Q8NFG4	4971	EOAD vs LOAD	False	5	4	AT_LEAST_TWO	True	True	False	False	False
+HGNC:648	ARC	True	Q7LC44	4863	EA vs EOAD	True	2	1	ONE	True	True	False	False	False
+HGNC:648	ARC	True	Q7LC44	4863	LA vs LOAD	True	2	1	ONE	True	True	False	False	False
+HGNC:648	ARC	True	Q7LC44	4863	EA vs LA	False	2	1	ONE	True	True	False	False	False
+HGNC:648	ARC	True	Q7LC44	4863	EOAD vs LOAD	False	2	1	ONE	True	True	False	False	False
+HGNC:22199	COBL	True	O75128-2	2048	EA vs EOAD	True	8	2	AT_LEAST_TWO	True	True	False	False	False
+HGNC:22199	COBL	True	O75128-2	2048	LA vs LOAD	True	8	2	AT_LEAST_TWO	True	True	False	False	False
+HGNC:22199	COBL	True	O75128-2	2048	EA vs LA	False	8	2	AT_LEAST_TWO	True	True	False	False	False
+HGNC:22199	COBL	True	O75128-2	2048	EOAD vs LOAD	False	8	2	AT_LEAST_TWO	True	True	False	False	False
+HGNC:14210	SUN2	True	Q9UH99-2	4540	EA vs EOAD	True	14	5	AT_LEAST_TWO	True	True	False	False	False
+HGNC:14210	SUN2	True	Q9UH99-2	4540	LA vs LOAD	True	14	5	AT_LEAST_TWO	True	True	False	False	False
+HGNC:14210	SUN2	True	Q9UH99-2	4540	EA vs LA	False	14	5	AT_LEAST_TWO	True	True	False	False	False
+HGNC:14210	SUN2	True	Q9UH99-2	4540	EOAD vs LOAD	False	14	5	AT_LEAST_TWO	True	True	False	False	False
+HGNC:18808	BZW2	True	Q9Y6E2	550	EA vs EOAD	True	11	5	AT_LEAST_TWO	True	True	False	False	False
+HGNC:18808	BZW2	True	Q9Y6E2	550	LA vs LOAD	True	11	5	AT_LEAST_TWO	True	True	False	False	False
+HGNC:18808	BZW2	True	Q9Y6E2	550	EA vs LA	False	11	5	AT_LEAST_TWO	True	True	False	False	False
+HGNC:18808	BZW2	True	Q9Y6E2	550	EOAD vs LOAD	False	11	5	AT_LEAST_TWO	True	True	False	False	False
+HGNC:587	APEX1	True	P27695	3148	EA vs EOAD	True	10	7	AT_LEAST_TWO	True	True	False	False	False
+HGNC:587	APEX1	True	P27695	3148	LA vs LOAD	True	10	7	AT_LEAST_TWO	True	True	False	False	False
+HGNC:587	APEX1	True	P27695	3148	EA vs LA	False	10	7	AT_LEAST_TWO	True	True	False	False	False
+HGNC:587	APEX1	True	P27695	3148	EOAD vs LOAD	False	10	7	AT_LEAST_TWO	True	True	False	False	False
+HGNC:6176	ITPA	True	Q9BY32	4493	EA vs EOAD	True	4	2	AT_LEAST_TWO	True	True	False	False	False
+HGNC:6176	ITPA	True	Q9BY32	4493	LA vs LOAD	True	4	2	AT_LEAST_TWO	True	True	False	False	False
+HGNC:6176	ITPA	True	Q9BY32	4493	EA vs LA	False	4	2	AT_LEAST_TWO	True	True	False	False	False
+HGNC:6176	ITPA	True	Q9BY32	4493	EOAD vs LOAD	False	4	2	AT_LEAST_TWO	True	True	False	False	False
+HGNC:6629	LLGL2	True	Q6P1M3-2	6692	EA vs EOAD	True	7		NOT_REPORTED	False		False	False	False
+HGNC:6629	LLGL2	True	Q6P1M3-2	6692	LA vs LOAD	True	7		NOT_REPORTED	False		False	False	False
+HGNC:6629	LLGL2	True	Q6P1M3-2	6692	EA vs LA	False	7		NOT_REPORTED	False		False	False	False
+HGNC:6629	LLGL2	True	Q6P1M3-2	6692	EOAD vs LOAD	False	7		NOT_REPORTED	False		False	False	False
+HGNC:6949	MCM6	True	Q14566	3922	EA vs EOAD	True	1	1	ONE	True	True	False	False	False
+HGNC:6949	MCM6	True	Q14566	3922	LA vs LOAD	True	1	1	ONE	True	True	False	False	False
+HGNC:6949	MCM6	True	Q14566	3922	EA vs LA	False	1	1	ONE	True	True	False	False	False
+HGNC:6949	MCM6	True	Q14566	3922	EOAD vs LOAD	False	1	1	ONE	True	True	False	False	False
+HGNC:6184	ITSN2	True	Q9NZM3-2	2930	EA vs EOAD	True	19	11	AT_LEAST_TWO	True	True	False	False	False
+HGNC:6184	ITSN2	True	Q9NZM3-2	2930	LA vs LOAD	True	19	11	AT_LEAST_TWO	True	True	False	False	False
+HGNC:6184	ITSN2	True	Q9NZM3-2	2930	EA vs LA	False	19	11	AT_LEAST_TWO	True	True	False	False	False
+HGNC:6184	ITSN2	True	Q9NZM3-2	2930	EOAD vs LOAD	False	19	11	AT_LEAST_TWO	True	True	False	False	False
+HGNC:8751	CDK18	True	Q07002	2008	EA vs EOAD	True	21	14	AT_LEAST_TWO	True	True	False	False	False
+HGNC:8751	CDK18	True	Q07002	2008	LA vs LOAD	True	21	14	AT_LEAST_TWO	True	True	False	False	False
+HGNC:8751	CDK18	True	Q07002	2008	EA vs LA	False	21	14	AT_LEAST_TWO	True	True	False	False	False
+HGNC:8751	CDK18	True	Q07002	2008	EOAD vs LOAD	False	21	14	AT_LEAST_TWO	True	True	False	False	False
+HGNC:8751	CDK18	True	Q07002-3	5135	EA vs EOAD	True	2	1	ONE	True	True	False	False	False
+HGNC:8751	CDK18	True	Q07002-3	5135	LA vs LOAD	True	2	1	ONE	True	True	False	False	False
+HGNC:8751	CDK18	True	Q07002-3	5135	EA vs LA	False	2	1	ONE	True	True	False	False	False
+HGNC:8751	CDK18	True	Q07002-3	5135	EOAD vs LOAD	False	2	1	ONE	True	True	False	False	False
+HGNC:29926	NOP58	False	Q9Y2X3	3988	EA vs EOAD	True	17	9	AT_LEAST_TWO	True	True	False	False	False
+HGNC:29926	NOP58	False	Q9Y2X3	3988	LA vs LOAD	True	17	9	AT_LEAST_TWO	True	True	False	False	False
+HGNC:29926	NOP58	False	Q9Y2X3	3988	EA vs LA	False	17	9	AT_LEAST_TWO	True	True	False	False	False
+HGNC:29926	NOP58	False	Q9Y2X3	3988	EOAD vs LOAD	False	17	9	AT_LEAST_TWO	True	True	False	False	False
+HGNC:14082	ANLN	False	Q9NQW6	3387	EA vs EOAD	True	23	11	AT_LEAST_TWO	True	True	False	False	False
+HGNC:14082	ANLN	False	Q9NQW6	3387	LA vs LOAD	True	23	11	AT_LEAST_TWO	True	True	False	False	False
+HGNC:14082	ANLN	False	Q9NQW6	3387	EA vs LA	False	23	11	AT_LEAST_TWO	True	True	False	False	False
+HGNC:14082	ANLN	False	Q9NQW6	3387	EOAD vs LOAD	False	23	11	AT_LEAST_TWO	True	True	False	False	False
+HGNC:24694	MICAL3	True	Q7RTP6	643	EA vs EOAD	True	37	27	AT_LEAST_TWO	True	True	False	False	False
+HGNC:24694	MICAL3	True	Q7RTP6	643	LA vs LOAD	True	37	27	AT_LEAST_TWO	True	True	False	False	False
+HGNC:24694	MICAL3	True	Q7RTP6	643	EA vs LA	False	37	27	AT_LEAST_TWO	True	True	False	False	False
+HGNC:24694	MICAL3	True	Q7RTP6	643	EOAD vs LOAD	False	37	27	AT_LEAST_TWO	True	True	False	False	False
+HGNC:9752	QDPR	True	P09417	191	EA vs EOAD	True	15	12	AT_LEAST_TWO	True	True	False	False	False
+HGNC:9752	QDPR	True	P09417	191	LA vs LOAD	True	15	12	AT_LEAST_TWO	True	True	False	False	False
+HGNC:9752	QDPR	True	P09417	191	EA vs LA	False	15	12	AT_LEAST_TWO	True	True	False	False	False
+HGNC:9752	QDPR	True	P09417	191	EOAD vs LOAD	False	15	12	AT_LEAST_TWO	True	True	False	False	False
+HGNC:9900	RBM3	True	P98179	4181	EA vs EOAD	True	3	2	AT_LEAST_TWO	True	True	False	False	False
+HGNC:9900	RBM3	True	P98179	4181	LA vs LOAD	True	3	2	AT_LEAST_TWO	True	True	False	False	False
+HGNC:9900	RBM3	True	P98179	4181	EA vs LA	False	3	2	AT_LEAST_TWO	True	True	False	False	False
+HGNC:9900	RBM3	True	P98179	4181	EOAD vs LOAD	False	3	2	AT_LEAST_TWO	True	True	False	False	False
+HGNC:11362	STAT1	False	P42224	1485	EA vs EOAD	True	36	26	AT_LEAST_TWO	True	True	False	False	False
+HGNC:11362	STAT1	False	P42224	1485	LA vs LOAD	True	36	26	AT_LEAST_TWO	True	True	False	False	False
+HGNC:11362	STAT1	False	P42224	1485	EA vs LA	False	36	26	AT_LEAST_TWO	True	True	False	False	False
+HGNC:11362	STAT1	False	P42224	1485	EOAD vs LOAD	False	36	26	AT_LEAST_TWO	True	True	False	False	False
+HGNC:144	ACTG1	False	I3L3R2	5233	EA vs EOAD	True	5	4	AT_LEAST_TWO	True	True	False	False	False
+HGNC:144	ACTG1	False	I3L3R2	5233	LA vs LOAD	True	5	4	AT_LEAST_TWO	True	True	False	False	False
+HGNC:144	ACTG1	False	I3L3R2	5233	EA vs LA	False	5	4	AT_LEAST_TWO	True	True	False	False	False
+HGNC:144	ACTG1	False	I3L3R2	5233	EOAD vs LOAD	False	5	4	AT_LEAST_TWO	True	True	False	False	False
+HGNC:12930	ZBTB16	True	Q05516	6459	EA vs EOAD	True	2		NOT_REPORTED	False		False	False	False
+HGNC:12930	ZBTB16	True	Q05516	6459	LA vs LOAD	True	2		NOT_REPORTED	False		False	False	False
+HGNC:12930	ZBTB16	True	Q05516	6459	EA vs LA	False	2		NOT_REPORTED	False		False	False	False
+HGNC:12930	ZBTB16	True	Q05516	6459	EOAD vs LOAD	False	2		NOT_REPORTED	False		False	False	False
+HGNC:25663	SAP30L	False	Q9HAJ7	7178	EA vs EOAD	True	1		NOT_REPORTED	False		False	False	False
+HGNC:25663	SAP30L	False	Q9HAJ7	7178	LA vs LOAD	True	1		NOT_REPORTED	False		False	False	False
+HGNC:25663	SAP30L	False	Q9HAJ7	7178	EA vs LA	False	1		NOT_REPORTED	False		False	False	False
+HGNC:25663	SAP30L	False	Q9HAJ7	7178	EOAD vs LOAD	False	1		NOT_REPORTED	False		False	False	False
+HGNC:19972	CLMN	True	Q96JQ2	1469	EA vs EOAD	True	11	3	AT_LEAST_TWO	True	True	False	False	False
+HGNC:19972	CLMN	True	Q96JQ2	1469	LA vs LOAD	True	11	3	AT_LEAST_TWO	True	True	False	False	False
+HGNC:19972	CLMN	True	Q96JQ2	1469	EA vs LA	False	11	3	AT_LEAST_TWO	True	True	False	False	False
+HGNC:19972	CLMN	True	Q96JQ2	1469	EOAD vs LOAD	False	11	3	AT_LEAST_TWO	True	True	False	False	False
+HGNC:23476	DOCK5	True	Q9H7D0	2755	EA vs EOAD	True	27	5	AT_LEAST_TWO	True	True	False	False	False
+HGNC:23476	DOCK5	True	Q9H7D0	2755	LA vs LOAD	True	27	5	AT_LEAST_TWO	True	True	False	False	False
+HGNC:23476	DOCK5	True	Q9H7D0	2755	EA vs LA	False	27	5	AT_LEAST_TWO	True	True	False	False	False
+HGNC:23476	DOCK5	True	Q9H7D0	2755	EOAD vs LOAD	False	27	5	AT_LEAST_TWO	True	True	False	False	False
+HGNC:20290	CAB39L	True	Q9H9S4	2757	EA vs EOAD	True	17	13	AT_LEAST_TWO	True	True	False	False	False
+HGNC:20290	CAB39L	True	Q9H9S4	2757	LA vs LOAD	True	17	13	AT_LEAST_TWO	True	True	False	False	False
+HGNC:20290	CAB39L	True	Q9H9S4	2757	EA vs LA	False	17	13	AT_LEAST_TWO	True	True	False	False	False
+HGNC:20290	CAB39L	True	Q9H9S4	2757	EOAD vs LOAD	False	17	13	AT_LEAST_TWO	True	True	False	False	False
+HGNC:23078	NRIP2	True	Q9BQI9-2	7073	EA vs EOAD	True	1		NOT_REPORTED	False		False	False	False
+HGNC:23078	NRIP2	True	Q9BQI9-2	7073	LA vs LOAD	True	1		NOT_REPORTED	False		False	False	False
+HGNC:23078	NRIP2	True	Q9BQI9-2	7073	EA vs LA	False	1		NOT_REPORTED	False		False	False	False
+HGNC:23078	NRIP2	True	Q9BQI9-2	7073	EOAD vs LOAD	False	1		NOT_REPORTED	False		False	False	False
+HGNC:28122	VPS25	False	Q9BRG1	641	EA vs EOAD	True	10	4	AT_LEAST_TWO	True	True	False	False	False
+HGNC:28122	VPS25	False	Q9BRG1	641	LA vs LOAD	True	10	4	AT_LEAST_TWO	True	True	False	False	False
+HGNC:28122	VPS25	False	Q9BRG1	641	EA vs LA	False	10	4	AT_LEAST_TWO	True	True	False	False	False
+HGNC:28122	VPS25	False	Q9BRG1	641	EOAD vs LOAD	False	10	4	AT_LEAST_TWO	True	True	False	False	False
+HGNC:17349	PRPF4	True	O43172-2	1421	EA vs EOAD	True	4	2	AT_LEAST_TWO	True	True	False	False	False
+HGNC:17349	PRPF4	True	O43172-2	1421	LA vs LOAD	True	4	2	AT_LEAST_TWO	True	True	False	False	False
+HGNC:17349	PRPF4	True	O43172-2	1421	EA vs LA	False	4	2	AT_LEAST_TWO	True	True	False	False	False
+HGNC:17349	PRPF4	True	O43172-2	1421	EOAD vs LOAD	False	4	2	AT_LEAST_TWO	True	True	False	False	False
+HGNC:6813	MAGED1	True	Q9Y5V3-2	7378	EA vs EOAD	True	1		NOT_REPORTED	False		False	False	False
+HGNC:6813	MAGED1	True	Q9Y5V3-2	7378	LA vs LOAD	True	1		NOT_REPORTED	False		False	False	False
+HGNC:6813	MAGED1	True	Q9Y5V3-2	7378	EA vs LA	False	1		NOT_REPORTED	False		False	False	False
+HGNC:6813	MAGED1	True	Q9Y5V3-2	7378	EOAD vs LOAD	False	1		NOT_REPORTED	False		False	False	False
+HGNC:24342	CCP110	True	O43303-2	6056	EA vs EOAD	True	7		NOT_REPORTED	False		False	False	False
+HGNC:24342	CCP110	True	O43303-2	6056	LA vs LOAD	True	7		NOT_REPORTED	False		False	False	False
+HGNC:24342	CCP110	True	O43303-2	6056	EA vs LA	False	7		NOT_REPORTED	False		False	False	False
+HGNC:24342	CCP110	True	O43303-2	6056	EOAD vs LOAD	False	7		NOT_REPORTED	False		False	False	False
+HGNC:14063	HDAC4	False	P56524	1915	EA vs EOAD	True	6	6	AT_LEAST_TWO	True	True	False	False	False
+HGNC:14063	HDAC4	False	P56524	1915	LA vs LOAD	True	6	6	AT_LEAST_TWO	True	True	False	False	False
+HGNC:14063	HDAC4	False	P56524	1915	EA vs LA	False	6	6	AT_LEAST_TWO	True	True	False	False	False
+HGNC:14063	HDAC4	False	P56524	1915	EOAD vs LOAD	False	6	6	AT_LEAST_TWO	True	True	False	False	False
+HGNC:30797	TM9SF4	False	Q92544	686	EA vs EOAD	True	2	2	AT_LEAST_TWO	True	True	False	False	False
+HGNC:30797	TM9SF4	False	Q92544	686	LA vs LOAD	True	2	2	AT_LEAST_TWO	True	True	False	False	False
+HGNC:30797	TM9SF4	False	Q92544	686	EA vs LA	False	2	2	AT_LEAST_TWO	True	True	False	False	False
+HGNC:30797	TM9SF4	False	Q92544	686	EOAD vs LOAD	False	2	2	AT_LEAST_TWO	True	True	False	False	False
+HGNC:24239	TMCC2	True	O75069	997	EA vs EOAD	True	8	2	AT_LEAST_TWO	True	True	False	False	False
+HGNC:24239	TMCC2	True	O75069	997	LA vs LOAD	True	8	2	AT_LEAST_TWO	True	True	False	False	False
+HGNC:24239	TMCC2	True	O75069	997	EA vs LA	False	8	2	AT_LEAST_TWO	True	True	False	False	False
+HGNC:24239	TMCC2	True	O75069	997	EOAD vs LOAD	False	8	2	AT_LEAST_TWO	True	True	False	False	False

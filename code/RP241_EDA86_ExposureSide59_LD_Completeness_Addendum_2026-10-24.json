@@ -1,0 +1,10 @@
+{
+  "frozen_utc": "2026-10-23T21:08:15.238482+00:00",
+  "reason": "RP241 overlap concerns exposure-side selection as well as analysed rows. Add two previously frozen AD IVs lacking outcome; retain original570 and no rescue.",
+  "GBM_nonpal_exposure_IVs": 10,
+  "AD_exposure_IVs": 59,
+  "AD_analysed_IVs": 57,
+  "threshold_r2": 0.8,
+  "primary_estimate_change": false,
+  "no_new_exposure_selection": true
+}

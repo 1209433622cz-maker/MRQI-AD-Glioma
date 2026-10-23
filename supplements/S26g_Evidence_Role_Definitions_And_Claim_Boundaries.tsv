@@ -1,0 +1,15 @@
+role_id	source	evidence_role	estimand	boundary
+DISCOVERY	GSE125583 / GSE165595	顺序发现	RNA组织表达及方向联合检验	508→81→43不是无偏验证率；125583与95587重叠；历史3／4级肿瘤–同人宿主不是健康脑
+SEQUENTIAL_AD	GSE159699	限定来源验证并参与选择	Penn来源12AD／10Old表达	形成81的来源不再作为81的全新确认；年龄重叠及Cook规则保留
+SEQUENTIAL_GBM	GSE13276	限定同人区室验证并参与选择	5成人历史GBM核心–邻近白质	43限定支持、16同向无FDR、1相反、21身份缺失；不补足健康对照
+REGION_SCALE	GSE203206	限定BA17验证	发布尺度连续表达	主家族未支持；相对尺度FOXO4不能救主分析；导出／批次未完全闭合
+HIPPOCAMPUS	GSE278723 / GSE29378	限定区域独立来源证据	CA1／CA3及区域对比	有限CSRP1关联；供者／脑库／批次簇、RIN和参考敏感，不证明脑区交互或共同效应
+AD_CELL	GSE174367	供者级程序与谱系探索	11AD／7Control六谱系	单基因BY／RIN未支持；程序关联不是每个成员基因复制
+TUMOUR_STATE	GSE182109 / GSE211376	肿瘤内状态定位	患者级恶性与宿主谱系状态	tumour-only不提供GBM对正常的细胞疾病效应
+AD_PROTEIN	Emory PXD020296	限定AD蛋白验证	9AD／10Control；8AsymAD另列	不是新的独立脑库家族；HC3与OLS分开，APEX1／ITSN2相反，阶段PMI依赖
+GBM_PROTEIN	CPTAC / same-plex GTEx	限定历史GBM蛋白验证	11序列检测阴性历史GBM／8正常	采集来源混杂；ARC／SUN2反向；双侧OLS支持未达双侧HC3
+NBB_SUMMARY	Amsterdam2026 NBB	独立脑库作者汇总的限定验证	EOAD／LOAD原MSqRob与DEqMS汇总	44来源行、33／22资格及原q家族；ARC单比较肽、QDPR旧源未支持、方法与年龄依赖
+MEASUREMENT	R13 peptide and R17 sequence audits	测量解释	115Run连接、44蛋白行；137芯片序列	非新的疾病复制；参考内归属不证明isoform或蛋白；实际MS-DAP模型未复现
+SPATIAL	GSE237183	肿瘤内患者级描述	13标本／5患者；对比2／4／3患者	不做新P／FDR；RNA派生标签不是独立病理真值
+GEO_BATCH_EXPLORATION	GSE122063	批次敏感探索	GEO31供者12AD／8VaD／11Control及双脑区	论文临床标签和真实实验日期未闭合；M0原43 BH20／17，Load Key日期与slide均0／0；非正式独立复制
+COMPUTATIONAL	R01–R17 replay series	计算一致性	10条数值重放＋1条汇总提取重放	11／17不是11条生物学验证；R12不是作者MS-DAP重建；六路线仍未验证整路线重放

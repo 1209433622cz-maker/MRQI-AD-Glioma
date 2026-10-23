@@ -1,0 +1,23 @@
+{
+  "version": "RP241_EDA89_2026-10-24",
+  "snapshot_date": "2026-10-24",
+  "parent_commit": "3dd32dbc7d9ce6a6ecbdff8676c5978470556fdc",
+  "parent_tree": "d0a0d7da8bf66b9b844cb447f1167b8338eb6647",
+  "source_candidate_manifest_sha256": "f9d37aee9e38f4e778254981eb9fb75b52fa20cf22ae0b173d5fbbf6ab833cb1",
+  "public_gene_rows": [
+    81,
+    43
+  ],
+  "public_gene_columns": 1207,
+  "identity_fields_removed": 37,
+  "aggregate_images": 43,
+  "literal_supplement_files": 35,
+  "derivative_gene_table_mappings": 2,
+  "indexed_figures": 57,
+  "indexed_supplements": 211,
+  "new_scientific_analysis": false,
+  "causal_upgrade": false,
+  "commit_identity": "Use the Git commit containing this file; no self-referential commit hash is embedded",
+  "new_DOI": null,
+  "new_license": null
+}

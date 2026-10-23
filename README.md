@@ -1,83 +1,75 @@
-# MRQI — Alzheimer’s disease / glioma evidence atlas
+# MRQI AD Glioma evidence atlas
 
-**RP2.4.1 · exploratory research · snapshot: 2026-10-16 · manuscript author review pending**
+**RP2.4.1 · EDA89 · 2026-10-24 · exploratory research**
 
-本仓库公开 AD（阿尔兹海默症）与胶质瘤／历史 GBM 反向表达研究的**可审计实现、完整基因级汇总结果和研究边界**。它是本地 MRQI 项目的筛选公开镜像，不是原始数据仓库，也不表示整套 RP2.4.1 已完成。
+本仓库提供阿尔茨海默病与胶质瘤／历史GBM反向表达研究的完整基因级汇总、限定解释、图表及来源诊断。本版以EDA88修正版准入清单迁移；没有新增DE、P／q、MR拟合或生物学验证。
 
-**目前可支持的结论：来源、脑区及肿瘤–宿主区室限定的探索性反向表达程序，伴随明显患者异质性和尺度依赖。** 目前不能据此确立 AD–GBM 临床保护效应、同细胞拮抗、现代 IDH-wildtype GBM 对健康人群的独立确认，或因果治疗靶点。
+目前证据支持**来源、脑区及历史肿瘤–宿主区室限定的探索性反向表达，伴随蛋白冲突、缺失和批次敏感性**。它不确立人群保护、现代WHO2021 IDH-wildtype GBM对健康人群的独立确认、同细胞拮抗或因果治疗靶点。
 
-## 从哪里开始
+## 阅读入口
 
-- [完整 81 基因对账表](results/S14a_All81_Aligned_Complete_Evidence_2026-10-16.tsv) 与 [原 43 基因对账表](results/S14b_Original43_Aligned_Complete_Evidence_2026-10-16.tsv)：各 163 列，支持、冲突、方向一致但未显著、缺失和不可检验均保留。
-- [研究现状与下一阶段](docs/EVIDENCE_AND_NEXT_STEPS.md)：可以说什么、不能说什么，以及哪些工作尚未执行。
-- [Methods / Results / 图例工作稿](docs/METHODS_RESULTS_WORKING_DRAFT.md)：14 节 Methods、8 节 Results、9 条图例；不是最终批准稿。
-- [来源与对照职责](docs/DATA_SOURCES.md)、[124 行来源／模型登记](results/S13_Source_Model_Family_Alignment_Registry_2026-10-16.tsv)、[复现说明](docs/REPRODUCIBILITY.md)。124 行是上下文，不是 124 个独立队列。
-- [公开范围](docs/PUBLICATION_SCOPE.md)、[历史工作与复用价值](docs/HISTORY_AND_REUSE.md)、[资产来源哈希](docs/PUBLIC_ASSET_PROVENANCE.tsv)。
+- [完整81基因表](results/Complete81_GroupLevel_AllEvidence.tsv)与[原43基因表](results/Original43_GroupLevel_AllEvidence.tsv)：各1207列，所有基因、原方向及其余数值保留。
+- [全文工作稿与29条参考文献](docs/CURRENT_MANUSCRIPT_WORKING_DRAFT.md)：Methods／Results／Discussion分开解释组织表达和已归档MR。
+- [43幅原像素汇总图](docs/SELECTED_AGGREGATE_FIGURE_GALLERY.md)、[主图图例](docs/MAIN_FIGURE_LEGENDS.md)、[补图图例](docs/SUPPLEMENTARY_FIGURE_LEGENDS.md)。
+- [全部211项实际披露清单](docs/All211_Actual_Payload_Index_And_Local_Disclosure.tsv)及[全部57幅图披露状态](docs/All57_Figure_Disclosure_Status.tsv)：索引项数不等于随包文件数。
+- [17路线范围](reproduction/All17_Route_Scope.tsv)、[计算与发布范围](docs/PUBLICATION_AND_REPRODUCTION_SCOPE.md)、[来源及官方入口](docs/DATA_SOURCES.tsv)。
 
-## 研究问题和估计对象
+## 研究对象与主要结果
 
-疾病遗传易感性的 MR 问题与组织表达问题分别解释。AD−对照、同一患者肿瘤核心−邻近宿主组织、肿瘤内部细胞状态、蛋白组差异和空间描述具有不同估计对象；它们不能合并成同一个风险比，也不能互相充当因果证明。
+发现层整合GSE125583的218AD／70对照和GSE165595的15人／30库配对肿瘤–宿主资料。共同16068基因构成32136个方向性IUT假设，BH保留508、BY保留130。GSE159699的12AD／10Old形成81，GSE13276的5名成人历史GBM配对资料进一步形成43（28R1、15R2）。**508→81→43是顺序候选形成；81／81或43／43不是无偏复制率。**
 
-发现分析使用共同的 16,068 个基因，构建 32,136 个预定义方向性 IUT 假设：R1 为 AD 上调且肿瘤–宿主下调；R2 相反。IUT 取两侧**单侧**P的最大值，BH/BY 保留完整 2G 家族。随后 508 → 81 → 43 是候选形成链；形成来源上的 81/81 或 43/43 不是新的无偏复制成功率。81／43 身份及方向不依后续结果重排。
-
-## 已完成的主要结果
-
-| 证据层 | 主要结果 | 解释限制 |
+| 证据层 | 当前可报告内容 | 必须保留的限制 |
 | --- | --- | --- |
-| Bulk 发现 | GSE125583：218 AD / 70 对照；GSE165595：15 患者 / 30 库。共同 16,068 基因；32,136 方向检验中 BH 508、BY 130 | AD 个体 RIN/PMI/batch 不全；肿瘤来源含 11 历史4级与4例3级；宿主不等于健康人群 |
-| AD 候选形成 | GSE159699：12 AD / 10 Old；原508家族中81支持 | 8 Young 另列；81在此来源形成 |
-| 限定肿瘤候选形成 | GSE13276：5 成人历史GBM患者、12数组；81中43支持、16仅方向、1点相反、21身份缺失 | 配对邻近白质；不是现代GBM健康人群复制；43在此形成 |
-| BA17 表达验证 | 原43中41可测：29方向一致、12点相反、2缺失，**主模型FDR支持0** | 38 AD / 8 对照主模型；发布尺度导出尚未完全闭合；FOXO4仅敏感性尺度显著 |
-| AD 单核 | 11 AD / 7 对照，六谱系供者伪bulk；12个BH基因–谱系命中、9基因；BY0，RIN敏感性单基因BH0 | 不把细胞当独立病例；部分模型供者不足；程序尺度为队列／谱系内Z分数 |
-| 肿瘤状态 | 两来源41可比基因中39均值峰一致；原43仅17在两来源全部共同患者均一致 | GSE211376仅自身11患者；GSE182109主14患者；tumour-only定位不是病例对照复制 |
-| 既有公开蛋白 | PSME3 / CKAP4 / NRIP2有双来源OLS方向支持；**共同预期反向方向的HC3支持0** | AD可估24／GBM36为原主BH分母；CPTAC疾病与采集来源混杂；ARC/SUN2等冲突保留 |
-| 空间 | 13标本／5患者，三对区域有效患者2／4／3；完整43均可覆盖 | 描述性、无新P/FDR；患者混合方向明显；RNA派生标签不是独立病理真值 |
+| 历史肿瘤–宿主 | GSE165595含11历史4级及4例3级；GSE13276仅5成人配对、12数组 | 宿主不是健康人群；未完成现代IDH-wildtype／WHO2021重分类 |
+| AD脑区 | BA17主家族未支持；两个海马来源有有限CA1 CSRP1关联 | 平台尺度、RIN、脑区与供者差异不消失；不能平均不同尺度效应或q值 |
+| 单核与肿瘤状态 | AD11／7供者六谱系；两tumour-only来源的状态定位 | 供者而非细胞是独立单位；状态定位不是疾病对照或同细胞反向机制 |
+| 蛋白 | 既有AD／CPTAC与NBB公开汇总提供部分方向背景 | 44来源行、33／22身份资格、APEX1／ITSN2反向、QDPR旧源未支持及ARC单比较肽均保留；无统一稳健反向蛋白签名 |
+| 空间 | 13标本／5患者；三类配对比较有效患者2／4／3 | 患者级描述、无新P/FDR；RNA派生标签非独立病理真值 |
+| GSE122063探索 | 原43在Frontal／Temporal M0有20／17项BH支持；相关供者删除均保持符号 | 持续BH仅13／14；Load Key日期及slide情景为0／0，仍为批次敏感探索；不能按表达修复临床分组 |
+| 测量审计 | 固定P1低信号、背景、尺度及供者删除诊断；完整137序列／44蛋白行审计 | 不替换疾病模型；不是新疾病效应、作者实际MSDAP模型复现或功能证明 |
 
-ITSN2两侧HC3 q均显著，但AD蛋白方向与预期R1相反，因此不属于共同反向支持；“共同支持0”不等于“两侧显著蛋白0”。
+全部阴性、冲突、缺失和不可估计结果按原检验家族保留，不用最小P敏感性、来源换取或测量注释重新筛选81／43。
 
-这里的“支持”必须结合原检验族和模型读取，不能将所有方向一致都当作显著。不同平台的β不可直接相加、排行或合成临床评分。
+## 已归档MR及来源限制
 
-![原43跨来源完整证据](figures/Fig2_Original43_CrossSource_2026-10-16.png)
+正向10工具IVW-MRE为β=−0.06845232870650153，SE=0.017049088100339817，P=5.944224710441849×10⁻⁵；反向57工具β=−0.13533944576480864，SE=0.14133335311078019，P=0.3382694003379726。它们是历史结果的披露，不是本轮重算，也不转为81／43靶点证据。
 
-## 仓库内容
+570个已分析跨方向组合及含全部59个反向暴露工具的590组合均无r²≥0.8，最大仍为0.775069。2项反向结局缺失未补proxy；没有强LD不等于没有局部相关或水平多效性。
 
-```text
-code/implementation/  实际统计与对账实现快照；保留历史配置
-results/              完整基因级汇总、敏感性、家族与缺失状态
-figures/              9幅原项目汇总图
-docs/                 方法结果工作稿、来源、历史、边界和下一阶段
-tools/                无外部依赖的公开包校验程序
-PUBLIC_MANIFEST.tsv   每个发布文件的bytes与SHA-256
-```
+Liu补表12／12的R2数值匹配abs-r形式、0／12匹配平方；保留原标签，不宣称作者错误或已获得liability解释度。Liu声明总N24352与Melin分队列24381的版本差异未闭合。0／12实际GBM研究EAF，8／12可追的是1000G EUR参考RAF，不能替代。反向AD为确诊加proxy；**正式liability Steiger仍未运行，无P或PASS**。[逐段来源映射](docs/MR_Paragraph_To_Source_And_Disclosure_Crosswalk.tsv)及`diagnostics/`保留细目。
 
-本地24表／121,573记录的完整工作集仍保留在canonical项目中。公开镜像主动不包含供者／患者级行、逐人删除表、raw表达、FASTQ、临床病例、受控文件、身份／签署申请、第三方文献PDF和完整本地日志；S08c/S10a移除了`patient_ids`列。这不改变本地全表或研究结果，公开派生表的变换和两端哈希见来源登记。
+## 本版实际收录
 
-## 如何核验
+| 类别 | 实际范围 |
+| --- | --- |
+| 基因表 | 81／43各1207列；本地1244列原表不变。删除37个可连接身份字段，其余149668个单元逐字相同 |
+| 图像 | 43个汇总PNG，含7主图组12组件与31补图；14个供者／Run／个体临床关联图仅本地 |
+| 补表 | `supplements/`35个全行原字节汇总文件；211项清单另有2个当前基因表派生映射。其余不是实际payload |
+| 复现 | 17条冻结起点范围说明、已归档诊断和文件校验器；没有全部原始输入、17模型实现或环境 |
+| 历史实现 | 可读[固定旧提交的实现目录](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/tree/3dd32dbc7d9ce6a6ecbdff8676c5978470556fdc/code/implementation)，仅作历史代码背景；不保证与本版全部17路线兼容 |
 
-安装Python 3（校验程序仅用标准库），从仓库根目录运行：
+旧EDA86／87未发布候选只删14列，漏掉8个最大变化供者及15个测量极值供者字段。本版累计去掉37列，并保存[逐字段去身份日志](docs/IDENTITY_COLUMN_REDACTIONS.tsv)；没有从数值表删基因或不利结果。旧候选不在本版中，Git历史也没有被重写。
+
+17／17不是raw-to-paper自足发布：13条数值／描述、1条原始计数、1条作者汇总提取、2条技术审计。R08历史142／142与当前110／142、32项及385单元差异继续分列；PNG渲染边界不与数值通过混算。复制文件、校验hash和计算复现都不是新增生物学复制。
+
+## 下载与核验
+
+下载本版仓库或固定commit，在任何工作目录运行（Python3，仅标准库）：
 
 ```bash
-python tools/verify_public_release.py
+python /path/to/MRQI-AD-Glioma/tools/verify_candidate.py
 ```
 
-它核查全部公开资产的bytes/SHA、完整81／43身份与子集、163列、32,136假设及508候选等结构。**此命令不从raw数据重跑研究，也不等于生物学结果独立复制。** 原模型重建需要按[复现文档](docs/REPRODUCIBILITY.md)取得各来源数据、重建目录及历史依赖；部分历史Python精确环境仍不完整，实施快照不是一键端到端pipeline。
+程序核查精确文件集合、bytes／SHA-256、完整基因身份与1207列、37身份字段排除、43图及35+2补表映射。允许Git本身的`.git`元数据，不将它当发布内容。`PUBLIC_MANIFEST.tsv`不包含自身；`PUBLIC_ASSET_PROVENANCE.tsv`记录逐文件来源。此程序不运行DE、MR或重建原统计模型。
 
-## 当前堵点与下一阶段
+## 版本 权利与引用
 
-1. 研究者尚需完成整合稿件的真实主张／范围审阅；机器验收不能代替作者批准。
-2. 优先寻找具有新信息、供者独立且对照病因可解释的GBM来源；现代IDH-wildtype优先，历史定义单列。不能用便利的TCGA–GTEx拼接假装消除来源混杂。
-3. 独立AD蛋白受控来源的正式签署、提交／批准及来源准入尚未完成；既有公开AD蛋白不等于这项独立复制。
-4. BA17尺度、空间RNA标签循环性和跨来源患者桥接继续限定解释。
-5. 新81／43靶点遗传与真实功能实验尚未执行；旧310基因阴性不逐基因投射到新集合，也不自动封锁合格的新模态研究。
+版本标识见[PUBLICATION_VERSION.json](PUBLICATION_VERSION.json)，精确commit以所阅Git版本为准；父版本为2026-10-16的66文件快照。EDA88旧候选与来源审计说明属于其原日期的工作记录，不代表本版当前发布状态。[迁移说明](docs/EDA89_MIGRATION_AND_VERSION_NOTES.md)标出可用性文字修订及保留范围。
 
-下一阶段为 **EDA8：独立验证准入与限定主张审阅**。新来源须先冻结来源、独立单位、模型、完整81／43和校正家族，再开展分析；不通过反复挑来源、挑敏感性最小P或删除冲突来“救题”。
+项目没有新DOI、正式出版物、MIT／CC0或其他新代码许可证。公开可阅览不等于再许可；应分别引用原研究和固定commit。[权利说明](RIGHTS_AND_SCOPE.md)继续适用。原GEO／PRIDE／PDC数据、第三方全文、原XLSX、参考基因型、个体表、逐人删除记录、受控资料、DUC／签署、账户及凭据不随本版分发。
 
-## 来源、引用与状态
-
-数据应从[原始研究和官方入口](docs/DATA_SOURCES.md)取得，并分别引用原论文。项目尚未提供正式发表论文或DOI；引用仓库时请记录仓库URL、commit及快照日期，不把工作稿当已发表研究。GitHub公开不改变第三方原始数据的许可／访问条件；原代码尚未另行授予开源许可证，详见[权利说明](RIGHTS_AND_THIRD_PARTY_DATA.md)。
-
-AI用于公开文献、代码辅助、整理和核验；没有将受控病例或受限制衍生内容作为本仓库发布资产。本轮审计／建库不新增生物学拟合或P/q。对外材料不含机构安全认证、真实签名或数据访问获批的替代证明。
+下一步应核对投稿规格与最终图表引用，保持来源和估计对象边界。新的现代GBM对照／分型、GBM精确版本EAF及正式Steiger、因果靶点和真实功能证据仍缺；不能靠公开归档升级结论。本轮不申请新受控资料。
 
 ### English summary
 
-This is a curated public research mirror for exploratory Alzheimer’s disease–glioma reciprocal expression analyses under RP2.4.1. It preserves the complete 81-gene and original 43-gene evidence matrices, negative findings, conflicts, missingness and original multiplicity families. Candidate formation is distinguished from independent replication. The evidence supports source-, region- and compartment-dependent expression patterns with patient heterogeneity. It does **not** establish clinical protection, same-cell antagonism, a modern population-normal GBM comparison or causal therapeutic targets. See the source register and methods working draft before interpreting any significance column. No raw, participant-level or controlled data are distributed.
+This curated EDA89 snapshot preserves all81 genes and the original43, negative and conflicting findings, missingness and original multiplicity families. Thirty-seven linkable donor-identity columns are excluded while every retained result cell remains unchanged. It contains43 aggregate images and35 literal whole-table summaries plus2 gene-table derivative mappings;57 figure and211 supplement indexes are not claims of complete payload delivery. Archived MR, source-frequency and sample-version limitations are kept separate from expression evidence. Formal liability-scale Steiger was not run. The snapshot does not establish population protection, same-cell antagonism, a modern GBM-versus-healthy comparison or causal therapeutic targets. The validator checks files rather than replaying all models.
