@@ -1,14 +1,14 @@
-# EDA88 图例披露补充
+# EDA90 补图图例与现行正文对应
 
-原图像、效应、P／q及家族均不改。MR结果属于独立的已归档遗传背景，不映射为81／43靶点证据。57幅全部有披露决定；43幅汇总图随候选包，14幅个体／Run／临床关联图仅本地。完整图例保留对未随包图的索引，不表示像素已公开。S1旧图中的DeepConsensus申请状态是历史状态，不是来源准入或已完成数据；M4A、S36、S45留一范围不是置信区间；S3空间仅描述。
+证据公开基线固定为 `c07775953aa8d395b6b79188d6053427bc0b4a26`。本图例随EDA91公开修订发布；精确版本以所阅Git提交为准。保留原科学图例与像素，仅更新引用、目录定位和交付状态。
 
-# 补图图例与交付对应
+现行正文：[EDA90 Word](AD_Glioma_RP241_EDA90_PublicCommit_Submission_Aligned_Manuscript_2026-10-24.docx)；[Markdown](CURRENT_MANUSCRIPT_WORKING_DRAFT.md)。57幅为7组主图的12组件加45幅补图；43幅有实际公开像素，14幅仅本地，不能把索引称为已公开图像。S1与S5仅历史目录背景，本轮正文未直接调用；不为凑齐引用而新增结果段落。
 
-当前交付对应EDA84主文和EDA83读者包。完整81／43、原检验家族及所有阴性、冲突、缺失保留；17／17为13数值／描述、1原始计数处理、1作者汇总提取和2技术审计，不是17次独立生物学复制。R08历史142／142与当前110／142及32项差异分列；R12不是作者实际MS-DAP模型复现，R11从冻结标签起步。原图件未改，文件验收不改变科学结果。
-
-读者导航：[EDA84主文](CURRENT_MANUSCRIPT_WORKING_DRAFT.md)；[EDA83读者入口](../reproduction/All17_Route_Scope.tsv)。历史技术说明保留在EDA80，以下逐图保留科学说明并连接现行文件。
+MR与来源附加目录14文件独立于211项补表；原81／43、检验家族、阴性、冲突和缺失全部保留。
 
 ## 补图S1 历史证据流程
+
+**EDA90核对：** 已公开原像素；正文实际调用 `无；历史目录背景`；图–补表映射 `S01;S02a;S02b;S03a;S04a;S04b`。原科学图件不变。
 
 **当前读者路线：** R01（仅本地或历史索引，见逐项披露清单）；R02（仅本地或历史索引，见逐项披露清单）；R03（仅本地或历史索引，见逐项披露清单）；R04（仅本地或历史索引，见逐项披露清单）；R05（仅本地或历史索引，见逐项披露清单）；R06（仅本地或历史索引，见逐项披露清单）
 
@@ -16,13 +16,15 @@
 
 **当前解释限制：** 历史图尚未纳入后续海马与NBB资料，图中application pending不是本轮实时行政状态。当前完整导航见主图1。
 
-**完整补表：** [S01](../supplements/S01_S01_Source_Roles_Selection_And_Multiplicity.tsv)，[S02a](../supplements/S02a_S02a_All16068_Discovery_Effects_And_Sensitivity.tsv)，[S02b](../supplements/S02b_S02b_All32136_Directional_IUT_Tests.tsv)，[S03a](../supplements/S03a_S03a_All508_AD_Validation_And_Discovery_Context.tsv)，S04a（S04a仅本地／索引；见[披露清单](All211_Actual_Payload_Index_And_Local_Disclosure.tsv)），S04b（S04b仅本地／索引；见[披露清单](All211_Actual_Payload_Index_And_Local_Disclosure.tsv)）
+**完整补表：** [S01](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S01_S01_Source_Roles_Selection_And_Multiplicity.tsv)，[S02a](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S02a_S02a_All16068_Discovery_Effects_And_Sensitivity.tsv)，[S02b](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S02b_S02b_All32136_Directional_IUT_Tests.tsv)，[S03a](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S03a_S03a_All508_AD_Validation_And_Discovery_Context.tsv)，S04a（S04a仅本地／索引；见[披露清单](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/All211_Actual_Payload_Index_And_Local_Disclosure.tsv)），S04b（S04b仅本地／索引；见[披露清单](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/All211_Actual_Payload_Index_And_Local_Disclosure.tsv)）
 
 **正文定位：** CR1P。原资产：F01。
 
-![补图S1 历史证据流程](../figures/S1_Supp_FigS01_Original_F01.png)
+![补图S1 历史证据流程](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/raw/c07775953aa8d395b6b79188d6053427bc0b4a26/figures/S1_Supp_FigS01_Original_F01.png)
 
 ## 补图S2 既有公开AD与GBM蛋白效应和区间
+
+**EDA90核对：** 已公开原像素；正文实际调用 `CR4P1`；图–补表映射 `S09;S24b`。原科学图件不变。
 
 **当前读者路线：** R09（仅本地或历史索引，见逐项披露清单）；R10（仅本地或历史索引，见逐项披露清单）
 
@@ -30,13 +32,15 @@
 
 **当前解释限制：** 原OLS主分析，HC3稳健性；BH实际分母24/36而非43；不同横轴不可合并。
 
-**完整补表：** [S09](../supplements/S09_S09_Public_Protein_All81_All8_Source_Models.tsv)，S24b（S24b仅本地／索引；见[披露清单](All211_Actual_Payload_Index_And_Local_Disclosure.tsv)）
+**完整补表：** [S09](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S09_S09_Public_Protein_All81_All8_Source_Models.tsv)，S24b（S24b仅本地／索引；见[披露清单](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/All211_Actual_Payload_Index_And_Local_Disclosure.tsv)）
 
 **正文定位：** CR4P1。原资产：F05。
 
-![补图S2 既有公开AD与GBM蛋白效应和区间](../figures/S2_Supp_FigS02_Original_F05.png)
+![补图S2 既有公开AD与GBM蛋白效应和区间](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/raw/c07775953aa8d395b6b79188d6053427bc0b4a26/figures/S2_Supp_FigS02_Original_F05.png)
 
 ## 补图S3 患者级空间描述
+
+**EDA90核对：** 已公开原像素；正文实际调用 `CR6P2`；图–补表映射 `S10a;S10b;S10c;S10d`。原科学图件不变。
 
 **当前读者路线：** R11（仅本地或历史索引，见逐项披露清单）；R13（仅本地或历史索引，见逐项披露清单）
 
@@ -44,13 +48,15 @@ GSE237183患者优先聚合后计算三个固定区域对比，患者N=2/4/3。�
 
 **当前解释限制：** 三个对比仅2/4/3患者；范围不是CI，没有新P/FDR；RNA标签存在定义重叠。
 
-**完整补表：** S10a（S10a仅本地／索引；见[披露清单](All211_Actual_Payload_Index_And_Local_Disclosure.tsv)），S10b（S10b仅本地／索引；见[披露清单](All211_Actual_Payload_Index_And_Local_Disclosure.tsv)），S10c（S10c仅本地／索引；见[披露清单](All211_Actual_Payload_Index_And_Local_Disclosure.tsv)），[S10d](../supplements/S10d_S10d_Spatial_All81_Label_Circularity.tsv)
+**完整补表：** S10a（S10a仅本地／索引；见[披露清单](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/All211_Actual_Payload_Index_And_Local_Disclosure.tsv)），S10b（S10b仅本地／索引；见[披露清单](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/All211_Actual_Payload_Index_And_Local_Disclosure.tsv)），S10c（S10c仅本地／索引；见[披露清单](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/All211_Actual_Payload_Index_And_Local_Disclosure.tsv)），[S10d](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S10d_S10d_Spatial_All81_Label_Circularity.tsv)
 
 **正文定位：** CR6P2。原资产：F06。
 
-![补图S3 患者级空间描述](../figures/S3_Supp_FigS03_Original_F06.png)
+![补图S3 患者级空间描述](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/raw/c07775953aa8d395b6b79188d6053427bc0b4a26/figures/S3_Supp_FigS03_Original_F06.png)
 
 ## 补图S4 全部AD谱系程序
+
+**EDA90核对：** 已公开原像素；正文实际调用 `CR3P1`；图–补表映射 `S07b;S07d`。原科学图件不变。
 
 **当前读者路线：** R08（仅本地或历史索引，见逐项披露清单）
 
@@ -58,13 +64,15 @@ GSE237183患者优先聚合后计算三个固定区域对比，患者N=2/4/3。�
 
 **当前解释限制：** 18项程序家族不是单基因家族；程序支持不能下放至每个成员。
 
-**完整补表：** [S07b](../supplements/S07b_S07b_AD_Complete43_Programs_And_Sensitivity.tsv)，S07d（S07d仅本地／索引；见[披露清单](All211_Actual_Payload_Index_And_Local_Disclosure.tsv)）
+**完整补表：** [S07b](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S07b_S07b_AD_Complete43_Programs_And_Sensitivity.tsv)，S07d（S07d仅本地／索引；见[披露清单](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/All211_Actual_Payload_Index_And_Local_Disclosure.tsv)）
 
 **正文定位：** CR3P1。原资产：F07。
 
-![补图S4 全部AD谱系程序](../figures/S4_Supp_FigS04_Original_F07.png)
+![补图S4 全部AD谱系程序](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/raw/c07775953aa8d395b6b79188d6053427bc0b4a26/figures/S4_Supp_FigS04_Original_F07.png)
 
 ## 补图S5 完整81的历史背景证据
+
+**EDA90核对：** 已公开原像素；正文实际调用 `无；历史目录背景`；图–补表映射 `S04a;S14a;S24a;S24c`。原科学图件不变。
 
 **当前读者路线：** R01（仅本地或历史索引，见逐项披露清单）；R02（仅本地或历史索引，见逐项披露清单）；R03（仅本地或历史索引，见逐项披露清单）；R04（仅本地或历史索引，见逐项披露清单）；R05（仅本地或历史索引，见逐项披露清单）；R06（仅本地或历史索引，见逐项披露清单）；R07（仅本地或历史索引，见逐项披露清单）；R08（仅本地或历史索引，见逐项披露清单）；R09（仅本地或历史索引，见逐项披露清单）；R10（仅本地或历史索引，见逐项披露清单）；R11（仅本地或历史索引，见逐项披露清单）；R12（仅本地或历史索引，见逐项披露清单）；R13（仅本地或历史索引，见逐项披露清单）；R14（仅本地或历史索引，见逐项披露清单）；R15（仅本地或历史索引，见逐项披露清单）；R16（仅本地或历史索引，见逐项披露清单）；R17（仅本地或历史索引，见逐项披露清单）
 
@@ -72,13 +80,15 @@ GSE237183患者优先聚合后计算三个固定区域对比，患者N=2/4/3。�
 
 **当前解释限制：** 历史面板只承担其所示来源；当前逐基因综合以S24为准，不能用背景缺主q称HC3阴性。
 
-**完整补表：** S04a（S04a仅本地／索引；见[披露清单](All211_Actual_Payload_Index_And_Local_Disclosure.tsv)），S14a（S14a仅本地／索引；见[披露清单](All211_Actual_Payload_Index_And_Local_Disclosure.tsv)），S24a（S24a仅本地／索引；见[披露清单](All211_Actual_Payload_Index_And_Local_Disclosure.tsv)），S24c（S24c仅本地／索引；见[披露清单](All211_Actual_Payload_Index_And_Local_Disclosure.tsv)）
+**完整补表：** S04a（S04a仅本地／索引；见[披露清单](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/All211_Actual_Payload_Index_And_Local_Disclosure.tsv)），S14a（S14a仅本地／索引；见[披露清单](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/All211_Actual_Payload_Index_And_Local_Disclosure.tsv)），S24a（S24a仅本地／索引；见[披露清单](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/All211_Actual_Payload_Index_And_Local_Disclosure.tsv)），S24c（S24c仅本地／索引；见[披露清单](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/All211_Actual_Payload_Index_And_Local_Disclosure.tsv)）
 
 **正文定位：** CR1P;CM6P。原资产：F09。
 
-![补图S5 完整81的历史背景证据](../figures/S5_Supp_FigS05_Original_F09.png)
+![补图S5 完整81的历史背景证据](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/raw/c07775953aa8d395b6b79188d6053427bc0b4a26/figures/S5_Supp_FigS05_Original_F09.png)
 
 ## 补图S6 全部44来源行与115 Run覆盖
+
+**EDA90核对：** 仅本地；本轮未分发像素；正文实际调用 `CR6P1`；图–补表映射 `S18e;S18f`。原科学图件不变。
 
 **当前读者路线：** R13（仅本地或历史索引，见逐项披露清单）
 
@@ -86,13 +96,15 @@ GSE237183患者优先聚合后计算三个固定区域对比，患者N=2/4/3。�
 
 **当前解释限制：** log(1+序列数)不是表达量；0不是生物零；115连上不等于115纳入疾病比较。
 
-**完整补表：** S18e（S18e仅本地／索引；见[披露清单](All211_Actual_Payload_Index_And_Local_Disclosure.tsv)），S18f（S18f仅本地／索引；见[披露清单](All211_Actual_Payload_Index_And_Local_Disclosure.tsv)）
+**完整补表：** S18e（S18e仅本地／索引；见[披露清单](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/All211_Actual_Payload_Index_And_Local_Disclosure.tsv)），S18f（S18f仅本地／索引；见[披露清单](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/All211_Actual_Payload_Index_And_Local_Disclosure.tsv)）
 
 **正文定位：** CR6P1。原资产：F10。
 
-补图S6 全部44来源行与115 Run覆盖（S6仅本地／索引；见[披露清单](All57_Figure_Disclosure_Status.tsv)）
+补图S6 全部44来源行与115 Run覆盖（S6仅本地／索引；见[披露清单](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/All57_Figure_Disclosure_Status.tsv)）
 
 ## 补图S7 FASTA及I/L序列特异性
+
+**EDA90核对：** 已公开原像素；正文实际调用 `CR6P1`；图–补表映射 `S18a;S18b;S18d`。原科学图件不变。
 
 **当前读者路线：** R13（仅本地或历史索引，见逐项披露清单）
 
@@ -100,13 +112,15 @@ GSE237183患者优先聚合后计算三个固定区域对比，患者N=2/4/3。�
 
 **当前解释限制：** 基因内归属不等于entry或功能异构体唯一；11条后缀entry无特异观测不是isoform不存在。
 
-**完整补表：** [S18a](../supplements/S18a_S18a_All44_Full_Observed_Peptide_Technical_Audit.tsv)，[S18b](../supplements/S18b_S18b_All_Observed44_Peptide_Full_FASTA_Exact_And_IL_Hits.tsv)，S18d（S18d仅本地／索引；见[披露清单](All211_Actual_Payload_Index_And_Local_Disclosure.tsv)）
+**完整补表：** [S18a](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S18a_S18a_All44_Full_Observed_Peptide_Technical_Audit.tsv)，[S18b](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S18b_S18b_All_Observed44_Peptide_Full_FASTA_Exact_And_IL_Hits.tsv)，S18d（S18d仅本地／索引；见[披露清单](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/All211_Actual_Payload_Index_And_Local_Disclosure.tsv)）
 
 **正文定位：** CR6P1;D05。原资产：F13。
 
-![补图S7 FASTA及I/L序列特异性](../figures/S7_Supp_FigS07_Original_F13.png)
+![补图S7 FASTA及I/L序列特异性](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/raw/c07775953aa8d395b6b79188d6053427bc0b4a26/figures/S7_Supp_FigS07_Original_F13.png)
 
 ## 补图S8 NBB两方法原效应
+
+**EDA90核对：** 已公开原像素；正文实际调用 `CR5P1`；图–补表映射 `S16a;S16b;S16c`。原科学图件不变。
 
 **当前读者路线：** R10（仅本地或历史索引，见逐项披露清单）；R12（仅本地或历史索引，见逐项披露清单）；R13（仅本地或历史索引，见逐项披露清单）
 
@@ -114,13 +128,15 @@ GSE237183患者优先聚合后计算三个固定区域对比，患者N=2/4/3。�
 
 **当前解释限制：** 同来源方法比较不是独立复制；无作者SE/CI，不反推误差线。
 
-**完整补表：** [S16a](../supplements/S16a_S16a_All81_Author_Summary_TwoMethods_2026-10-17.tsv)，[S16b](../supplements/S16b_S16b_Original43_Author_Summary_TwoMethods_2026-10-17.tsv)，[S16c](../supplements/S16c_S16c_All44_TwoDiseaseContrasts_TwoMethods_2026-10-17.tsv)
+**完整补表：** [S16a](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S16a_S16a_All81_Author_Summary_TwoMethods_2026-10-17.tsv)，[S16b](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S16b_S16b_Original43_Author_Summary_TwoMethods_2026-10-17.tsv)，[S16c](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S16c_S16c_All44_TwoDiseaseContrasts_TwoMethods_2026-10-17.tsv)
 
 **正文定位：** CR5P1。原资产：F14。
 
-![补图S8 NBB两方法原效应](../figures/S8_Supp_FigS08_Original_F14.png)
+![补图S8 NBB两方法原效应](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/raw/c07775953aa8d395b6b79188d6053427bc0b4a26/figures/S8_Supp_FigS08_Original_F14.png)
 
 ## 补图S9 完整43同来源阶段比较
+
+**EDA90核对：** 已公开原像素；正文实际调用 `CR4P2`；图–补表映射 `S17a;S17b`。原科学图件不变。
 
 **当前读者路线：** R09（仅本地或历史索引，见逐项披露清单）；R10（仅本地或历史索引，见逐项披露清单）
 
@@ -128,13 +144,15 @@ GSE237183患者优先聚合后计算三个固定区域对比，患者N=2/4/3。�
 
 **当前解释限制：** 横断面阶段不是进展；PMI后支持减弱但点方向不翻转；48与86家族分开。
 
-**完整补表：** [S17a](../supplements/S17a_S17a_All81_TwoStage_Base_PMI_2026-10-17.tsv)，[S17b](../supplements/S17b_S17b_Original43_TwoStage_Base_PMI_2026-10-17.tsv)
+**完整补表：** [S17a](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S17a_S17a_All81_TwoStage_Base_PMI_2026-10-17.tsv)，[S17b](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S17b_S17b_Original43_TwoStage_Base_PMI_2026-10-17.tsv)
 
 **正文定位：** CR4P2。原资产：F15。
 
-![补图S9 完整43同来源阶段比较](../figures/S9_Supp_FigS09_Original_F15.png)
+![补图S9 完整43同来源阶段比较](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/raw/c07775953aa8d395b6b79188d6053427bc0b4a26/figures/S9_Supp_FigS09_Original_F15.png)
 
 ## 补图S10 阶段供者年龄及PMI
+
+**EDA90核对：** 仅本地；本轮未分发像素；正文实际调用 `CR4P2`；图–补表映射 `S17a;S17b`。原科学图件不变。
 
 **当前读者路线：** R09（仅本地或历史索引，见逐项披露清单）；R10（仅本地或历史索引，见逐项披露清单）
 
@@ -142,13 +160,15 @@ GSE237183患者优先聚合后计算三个固定区域对比，患者N=2/4/3。�
 
 **当前解释限制：** 27真实供者，AsymAD仅2/8处于三组共同范围；不解释成PMI因果。
 
-**完整补表：** [S17a](../supplements/S17a_S17a_All81_TwoStage_Base_PMI_2026-10-17.tsv)，[S17b](../supplements/S17b_S17b_Original43_TwoStage_Base_PMI_2026-10-17.tsv)
+**完整补表：** [S17a](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S17a_S17a_All81_TwoStage_Base_PMI_2026-10-17.tsv)，[S17b](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S17b_S17b_Original43_TwoStage_Base_PMI_2026-10-17.tsv)
 
 **正文定位：** CR4P2。原资产：F16。
 
-补图S10 阶段供者年龄及PMI（S10仅本地／索引；见[披露清单](All57_Figure_Disclosure_Status.tsv)）
+补图S10 阶段供者年龄及PMI（S10仅本地／索引；见[披露清单](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/All57_Figure_Disclosure_Status.tsv)）
 
 ## 补图S11 GSE278723全248列无监督QC
+
+**EDA90核对：** 仅本地；本轮未分发像素；正文实际调用 `E20R01`；图–补表映射 `S20a;S20c`。原科学图件不变。
 
 **当前读者路线：** R14（仅本地或历史索引，见逐项披露清单）
 
@@ -156,13 +176,15 @@ F01：全部248列无监督QC，PCA为来源基因方差筛选；未按聚类再
 
 **当前解释限制：** 248组织列不是248人；NX和供者冲突未按聚类修复，不据PCA新增排除。
 
-**完整补表：** [S20a](../supplements/S20a_Complete81_M0_All16Contrasts_2026-10-18.tsv)，[S20c](../supplements/S20c_Complete81_AllModels_All16Contrasts_2026-10-18.tsv)
+**完整补表：** [S20a](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S20a_Complete81_M0_All16Contrasts_2026-10-18.tsv)，[S20c](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S20c_Complete81_AllModels_All16Contrasts_2026-10-18.tsv)
 
 **正文定位：** E20M01。原资产：F17。
 
-补图S11 GSE278723全248列无监督QC（S11仅本地／索引；见[披露清单](All57_Figure_Disclosure_Status.tsv)）
+补图S11 GSE278723全248列无监督QC（S11仅本地／索引；见[披露清单](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/All57_Figure_Disclosure_Status.tsv)）
 
 ## 补图S12 GSE278723供者与counts背景
+
+**EDA90核对：** 仅本地；本轮未分发像素；正文实际调用 `E20R01`；图–补表映射 `S20a;S20c`。原科学图件不变。
 
 **当前读者路线：** R14（仅本地或历史索引，见逐项披露清单）
 
@@ -170,13 +192,15 @@ F02：供者年龄、PMI及提供counts总量；列总量不是FASTQ测序深度
 
 **当前解释限制：** counts列总量不是FASTQ测序深度；同人跨区不当独立供者。
 
-**完整补表：** [S20a](../supplements/S20a_Complete81_M0_All16Contrasts_2026-10-18.tsv)，[S20c](../supplements/S20c_Complete81_AllModels_All16Contrasts_2026-10-18.tsv)
+**完整补表：** [S20a](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S20a_Complete81_M0_All16Contrasts_2026-10-18.tsv)，[S20c](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S20c_Complete81_AllModels_All16Contrasts_2026-10-18.tsv)
 
 **正文定位：** E20M01。原资产：F18。
 
-补图S12 GSE278723供者与counts背景（S12仅本地／索引；见[披露清单](All57_Figure_Disclosure_Status.tsv)）
+补图S12 GSE278723供者与counts背景（S12仅本地／索引；见[披露清单](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/All57_Figure_Disclosure_Status.tsv)）
 
 ## 补图S13 完整43的CAA背景
+
+**EDA90核对：** 已公开原像素；正文实际调用 `E20R01`；图–补表映射 `S20b;S20d`。原科学图件不变。
 
 **当前读者路线：** R14（仅本地或历史索引，见逐项披露清单）
 
@@ -184,13 +208,15 @@ F04：原43的CAA／ADCAA背景，保留原病理分组及16比较家族，不�
 
 **当前解释限制：** CAA/ADCAA不是纯AD复制，原16比较家族不混换。
 
-**完整补表：** [S20b](../supplements/S20b_Complete43_M0_All16Contrasts_2026-10-18.tsv)，[S20d](../supplements/S20d_Complete43_AllModels_All16Contrasts_2026-10-18.tsv)
+**完整补表：** [S20b](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S20b_Complete43_M0_All16Contrasts_2026-10-18.tsv)，[S20d](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S20d_Complete43_AllModels_All16Contrasts_2026-10-18.tsv)
 
 **正文定位：** E20R01。原资产：F20。
 
-![补图S13 完整43的CAA背景](../figures/S13_Supp_FigS13_Original_F20.png)
+![补图S13 完整43的CAA背景](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/raw/c07775953aa8d395b6b79188d6053427bc0b4a26/figures/S13_Supp_FigS13_Original_F20.png)
 
 ## 补图S14 完整81全部16比较
+
+**EDA90核对：** 已公开原像素；正文实际调用 `E20R01`；图–补表映射 `S20a;S20c`。原科学图件不变。
 
 **当前读者路线：** R14（仅本地或历史索引，见逐项披露清单）
 
@@ -198,13 +224,15 @@ F05：完整81×16主比较效应，原1296家族与来源313472家族分开，�
 
 **当前解释限制：** 1296候选家族与313472来源家族分开，缺失不补0。
 
-**完整补表：** [S20a](../supplements/S20a_Complete81_M0_All16Contrasts_2026-10-18.tsv)，[S20c](../supplements/S20c_Complete81_AllModels_All16Contrasts_2026-10-18.tsv)
+**完整补表：** [S20a](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S20a_Complete81_M0_All16Contrasts_2026-10-18.tsv)，[S20c](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S20c_Complete81_AllModels_All16Contrasts_2026-10-18.tsv)
 
 **正文定位：** E20R01。原资产：F21。
 
-![补图S14 完整81全部16比较](../figures/S14_Supp_FigS14_Original_F21.png)
+![补图S14 完整81全部16比较](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/raw/c07775953aa8d395b6b79188d6053427bc0b4a26/figures/S14_Supp_FigS14_Original_F21.png)
 
 ## 补图S15 GSE278723全源火山图
+
+**EDA90核对：** 已公开原像素；正文实际调用 `E20R01`；图–补表映射 `S20a;S20c`。原科学图件不变。
 
 **当前读者路线：** R14（仅本地或历史索引，见逐项披露清单）
 
@@ -212,55 +240,63 @@ F06：原提供基因全集AD−NC火山图，跨脑区和检验家族不得择�
 
 **当前解释限制：** 保留原全源检验，不将新的全源命中叫AD–GBM靶点。
 
-**完整补表：** [S20a](../supplements/S20a_Complete81_M0_All16Contrasts_2026-10-18.tsv)，[S20c](../supplements/S20c_Complete81_AllModels_All16Contrasts_2026-10-18.tsv)
+**完整补表：** [S20a](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S20a_Complete81_M0_All16Contrasts_2026-10-18.tsv)，[S20c](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S20c_Complete81_AllModels_All16Contrasts_2026-10-18.tsv)
 
 **正文定位：** E20R01。原资产：F22。
 
-![补图S15 GSE278723全源火山图](../figures/S15_Supp_FigS15_Original_F22.png)
+![补图S15 GSE278723全源火山图](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/raw/c07775953aa8d395b6b79188d6053427bc0b4a26/figures/S15_Supp_FigS15_Original_F22.png)
 
 ## 补图S16 CA1原voom诊断
 
+**EDA90核对：** 已公开原像素；正文实际调用 `E20R01`；图–补表映射 `S20c`。原科学图件不变。
+
 **当前读者路线：** R14（仅本地或历史索引，见逐项披露清单）
 
 Voom：该脑区原M0 voom均值–方差诊断；仅诊断图，不是独立队列/新验证。
 
 **当前解释限制：** 原均值方差诊断不是独立复制。
 
-**完整补表：** [S20c](../supplements/S20c_Complete81_AllModels_All16Contrasts_2026-10-18.tsv)
+**完整补表：** [S20c](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S20c_Complete81_AllModels_All16Contrasts_2026-10-18.tsv)
 
 **正文定位：** E20M01。原资产：F23。
 
-![补图S16 CA1原voom诊断](../figures/S16_Supp_FigS16_Original_F23.png)
+![补图S16 CA1原voom诊断](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/raw/c07775953aa8d395b6b79188d6053427bc0b4a26/figures/S16_Supp_FigS16_Original_F23.png)
 
 ## 补图S17 CA2原voom诊断
 
+**EDA90核对：** 已公开原像素；正文实际调用 `E20R01`；图–补表映射 `S20c`。原科学图件不变。
+
 **当前读者路线：** R14（仅本地或历史索引，见逐项披露清单）
 
 Voom：该脑区原M0 voom均值–方差诊断；仅诊断图，不是独立队列/新验证。
 
 **当前解释限制：** 原均值方差诊断不是独立复制。
 
-**完整补表：** [S20c](../supplements/S20c_Complete81_AllModels_All16Contrasts_2026-10-18.tsv)
+**完整补表：** [S20c](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S20c_Complete81_AllModels_All16Contrasts_2026-10-18.tsv)
 
 **正文定位：** E20M01。原资产：F24。
 
-![补图S17 CA2原voom诊断](../figures/S17_Supp_FigS17_Original_F24.png)
+![补图S17 CA2原voom诊断](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/raw/c07775953aa8d395b6b79188d6053427bc0b4a26/figures/S17_Supp_FigS17_Original_F24.png)
 
 ## 补图S18 CA3原voom诊断
 
+**EDA90核对：** 已公开原像素；正文实际调用 `E20R01`；图–补表映射 `S20c`。原科学图件不变。
+
 **当前读者路线：** R14（仅本地或历史索引，见逐项披露清单）
 
 Voom：该脑区原M0 voom均值–方差诊断；仅诊断图，不是独立队列/新验证。
 
 **当前解释限制：** 原均值方差诊断不是独立复制。
 
-**完整补表：** [S20c](../supplements/S20c_Complete81_AllModels_All16Contrasts_2026-10-18.tsv)
+**完整补表：** [S20c](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S20c_Complete81_AllModels_All16Contrasts_2026-10-18.tsv)
 
 **正文定位：** E20M01。原资产：F25。
 
-![补图S18 CA3原voom诊断](../figures/S18_Supp_FigS18_Original_F25.png)
+![补图S18 CA3原voom诊断](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/raw/c07775953aa8d395b6b79188d6053427bc0b4a26/figures/S18_Supp_FigS18_Original_F25.png)
 
 ## 补图S19 CA4原voom诊断
+
+**EDA90核对：** 已公开原像素；正文实际调用 `E20R01`；图–补表映射 `S20c`。原科学图件不变。
 
 **当前读者路线：** R14（仅本地或历史索引，见逐项披露清单）
 
@@ -268,13 +304,15 @@ Voom：该脑区原M0 voom均值–方差诊断；仅诊断图，不是独立队
 
 **当前解释限制：** 原均值方差诊断不是独立复制。
 
-**完整补表：** [S20c](../supplements/S20c_Complete81_AllModels_All16Contrasts_2026-10-18.tsv)
+**完整补表：** [S20c](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S20c_Complete81_AllModels_All16Contrasts_2026-10-18.tsv)
 
 **正文定位：** E20M01。原资产：F26。
 
-![补图S19 CA4原voom诊断](../figures/S19_Supp_FigS19_Original_F26.png)
+![补图S19 CA4原voom诊断](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/raw/c07775953aa8d395b6b79188d6053427bc0b4a26/figures/S19_Supp_FigS19_Original_F26.png)
 
 ## 补图S20 GSE29378全63数组QC
+
+**EDA90核对：** 仅本地；本轮未分发像素；正文实际调用 `E20R02`；图–补表映射 `S21a;S21c`。原科学图件不变。
 
 **当前读者路线：** R15（仅本地或历史索引，见逐项披露清单）
 
@@ -286,13 +324,15 @@ M0 CA1 n31(16AD/15Control)，CA3 n30(15/15)，配对差分29人(14/15)，模型�
 
 **当前解释限制：** 63数组/33人，PCA点数不是独立人数，不据聚类新增剔除。
 
-**完整补表：** [S21a](../supplements/S21a_Complete81_Primary_ThreeContexts_2026-10-18.tsv)，[S21c](../supplements/S21c_Complete81_AllModels_ThreeContexts_2026-10-18.tsv)
+**完整补表：** [S21a](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S21a_Complete81_Primary_ThreeContexts_2026-10-18.tsv)，[S21c](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S21c_Complete81_AllModels_ThreeContexts_2026-10-18.tsv)
 
 **正文定位：** E20M02。原资产：F27。
 
-补图S20 GSE29378全63数组QC（S20仅本地／索引；见[披露清单](All57_Figure_Disclosure_Status.tsv)）
+补图S20 GSE29378全63数组QC（S20仅本地／索引；见[披露清单](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/All57_Figure_Disclosure_Status.tsv)）
 
 ## 补图S21 GSE29378供者与芯片背景
+
+**EDA90核对：** 仅本地；本轮未分发像素；正文实际调用 `E20R02`；图–补表映射 `S21a;S21c`。原科学图件不变。
 
 **当前读者路线：** R15（仅本地或历史索引，见逐项披露清单）
 
@@ -304,13 +344,15 @@ M0 CA1 n31(16AD/15Control)，CA3 n30(15/15)，配对差分29人(14/15)，模型�
 
 **当前解释限制：** 供者962的PMI缺失保留，六芯片覆盖不能证明随机批次。
 
-**完整补表：** [S21a](../supplements/S21a_Complete81_Primary_ThreeContexts_2026-10-18.tsv)，[S21c](../supplements/S21c_Complete81_AllModels_ThreeContexts_2026-10-18.tsv)
+**完整补表：** [S21a](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S21a_Complete81_Primary_ThreeContexts_2026-10-18.tsv)，[S21c](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S21c_Complete81_AllModels_ThreeContexts_2026-10-18.tsv)
 
 **正文定位：** E20M02。原资产：F28。
 
-补图S21 GSE29378供者与芯片背景（S21仅本地／索引；见[披露清单](All57_Figure_Disclosure_Status.tsv)）
+补图S21 GSE29378供者与芯片背景（S21仅本地／索引；见[披露清单](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/All57_Figure_Disclosure_Status.tsv)）
 
 ## 补图S22 完整81三上下文主效应
+
+**EDA90核对：** 已公开原像素；正文实际调用 `E20R02`；图–补表映射 `S21a;S21c`。原科学图件不变。
 
 **当前读者路线：** R15（仅本地或历史索引，见逐项披露清单）
 
@@ -322,13 +364,15 @@ M0 CA1 n31(16AD/15Control)，CA3 n30(15/15)，配对差分29人(14/15)，模型�
 
 **当前解释限制：** 原243家族，灰色是测量缺失，不是零或新阴性。
 
-**完整补表：** [S21a](../supplements/S21a_Complete81_Primary_ThreeContexts_2026-10-18.tsv)，[S21c](../supplements/S21c_Complete81_AllModels_ThreeContexts_2026-10-18.tsv)
+**完整补表：** [S21a](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S21a_Complete81_Primary_ThreeContexts_2026-10-18.tsv)，[S21c](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S21c_Complete81_AllModels_ThreeContexts_2026-10-18.tsv)
 
 **正文定位：** E20R02。原资产：F30。
 
-![补图S22 完整81三上下文主效应](../figures/S22_Supp_FigS22_Original_F30.png)
+![补图S22 完整81三上下文主效应](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/raw/c07775953aa8d395b6b79188d6053427bc0b4a26/figures/S22_Supp_FigS22_Original_F30.png)
 
 ## 补图S23 完整43区域效应及区间
+
+**EDA90核对：** 已公开原像素；正文实际调用 `E20R02`；图–补表映射 `S21b;S21d`。原科学图件不变。
 
 **当前读者路线：** R15（仅本地或历史索引，见逐项披露清单）
 
@@ -340,13 +384,15 @@ M0 CA1 n31(16AD/15Control)，CA3 n30(15/15)，配对差分29人(14/15)，模型�
 
 **当前解释限制：** moderated CI保留，M0不被RIN或最优探针替代。
 
-**完整补表：** [S21b](../supplements/S21b_Complete43_Primary_ThreeContexts_2026-10-18.tsv)，[S21d](../supplements/S21d_Complete43_AllModels_ThreeContexts_2026-10-18.tsv)
+**完整补表：** [S21b](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S21b_Complete43_Primary_ThreeContexts_2026-10-18.tsv)，[S21d](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S21d_Complete43_AllModels_ThreeContexts_2026-10-18.tsv)
 
 **正文定位：** E20R02。原资产：F31。
 
-![补图S23 完整43区域效应及区间](../figures/S23_Supp_FigS23_Original_F31.png)
+![补图S23 完整43区域效应及区间](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/raw/c07775953aa8d395b6b79188d6053427bc0b4a26/figures/S23_Supp_FigS23_Original_F31.png)
 
 ## 补图S24 GSE29378全源火山图
+
+**EDA90核对：** 已公开原像素；正文实际调用 `E20R02`；图–补表映射 `S21a;S21c`。原科学图件不变。
 
 **当前读者路线：** R15（仅本地或历史索引，见逐项披露清单）
 
@@ -358,13 +404,15 @@ M0 CA1 n31(16AD/15Control)，CA3 n30(15/15)，配对差分29人(14/15)，模型�
 
 **当前解释限制：** 全源43521家族不能替代129/243候选家族。
 
-**完整补表：** [S21a](../supplements/S21a_Complete81_Primary_ThreeContexts_2026-10-18.tsv)，[S21c](../supplements/S21c_Complete81_AllModels_ThreeContexts_2026-10-18.tsv)
+**完整补表：** [S21a](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S21a_Complete81_Primary_ThreeContexts_2026-10-18.tsv)，[S21c](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S21c_Complete81_AllModels_ThreeContexts_2026-10-18.tsv)
 
 **正文定位：** E20R02。原资产：F32。
 
-![补图S24 GSE29378全源火山图](../figures/S24_Supp_FigS24_Original_F32.png)
+![补图S24 GSE29378全源火山图](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/raw/c07775953aa8d395b6b79188d6053427bc0b4a26/figures/S24_Supp_FigS24_Original_F32.png)
 
 ## 补图S25 完整可测候选原模型与探针敏感性
+
+**EDA90核对：** 已公开原像素；正文实际调用 `E20R02`；图–补表映射 `S21c;S21d`。原科学图件不变。
 
 **当前读者路线：** R15（仅本地或历史索引，见逐项披露清单）
 
@@ -376,13 +424,15 @@ M0 CA1 n31(16AD/15Control)，CA3 n30(15/15)，配对差分29人(14/15)，模型�
 
 **当前解释限制：** 73可测父候选为测量子集，最高平均探针不是按疾病P选择。
 
-**完整补表：** [S21c](../supplements/S21c_Complete81_AllModels_ThreeContexts_2026-10-18.tsv)，[S21d](../supplements/S21d_Complete43_AllModels_ThreeContexts_2026-10-18.tsv)
+**完整补表：** [S21c](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S21c_Complete81_AllModels_ThreeContexts_2026-10-18.tsv)，[S21d](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S21d_Complete43_AllModels_ThreeContexts_2026-10-18.tsv)
 
 **正文定位：** E20M02;E20R02。原资产：F33。
 
-![补图S25 完整可测候选原模型与探针敏感性](../figures/S25_Supp_FigS25_Original_F33.png)
+![补图S25 完整可测候选原模型与探针敏感性](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/raw/c07775953aa8d395b6b79188d6053427bc0b4a26/figures/S25_Supp_FigS25_Original_F33.png)
 
 ## 补图S26 取得RIN后的模型敏感性
+
+**EDA90核对：** 已公开原像素；正文实际调用 `E20R02`；图–补表映射 `S21c;S21d`。原科学图件不变。
 
 **当前读者路线：** R15（仅本地或历史索引，见逐项披露清单）
 
@@ -394,13 +444,15 @@ M0 CA1 n31(16AD/15Control)，CA3 n30(15/15)，配对差分29人(14/15)，模型�
 
 **当前解释限制：** M4–M6在初始结果后取得并冻结，不追溯称初始预声明；BZW2/PRPF4未保持原FDR。
 
-**完整补表：** [S21c](../supplements/S21c_Complete81_AllModels_ThreeContexts_2026-10-18.tsv)，[S21d](../supplements/S21d_Complete43_AllModels_ThreeContexts_2026-10-18.tsv)
+**完整补表：** [S21c](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S21c_Complete81_AllModels_ThreeContexts_2026-10-18.tsv)，[S21d](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S21d_Complete43_AllModels_ThreeContexts_2026-10-18.tsv)
 
 **正文定位：** E20M03;E20R02。原资产：F34。
 
-![补图S26 取得RIN后的模型敏感性](../figures/S26_Supp_FigS26_Original_F34.png)
+![补图S26 取得RIN后的模型敏感性](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/raw/c07775953aa8d395b6b79188d6053427bc0b4a26/figures/S26_Supp_FigS26_Original_F34.png)
 
 ## 补图S27 GSE29378公开RIN背景
+
+**EDA90核对：** 仅本地；本轮未分发像素；正文实际调用 `E20R02`；图–补表映射 `S21c;S21d`。原科学图件不变。
 
 **当前读者路线：** R15（仅本地或历史索引，见逐项披露清单）
 
@@ -412,13 +464,15 @@ M0 CA1 n31(16AD/15Control)，CA3 n30(15/15)，配对差分29人(14/15)，模型�
 
 **当前解释限制：** RIN阈值5只作M6；原M0不按此新增剔除。
 
-**完整补表：** [S21c](../supplements/S21c_Complete81_AllModels_ThreeContexts_2026-10-18.tsv)，[S21d](../supplements/S21d_Complete43_AllModels_ThreeContexts_2026-10-18.tsv)
+**完整补表：** [S21c](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S21c_Complete81_AllModels_ThreeContexts_2026-10-18.tsv)，[S21d](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S21d_Complete43_AllModels_ThreeContexts_2026-10-18.tsv)
 
 **正文定位：** E20M03。原资产：F35。
 
-补图S27 GSE29378公开RIN背景（S27仅本地／索引；见[披露清单](All57_Figure_Disclosure_Status.tsv)）
+补图S27 GSE29378公开RIN背景（S27仅本地／索引；见[披露清单](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/All57_Figure_Disclosure_Status.tsv)）
 
 ## 补图S28 完整81删除后稳号比例
+
+**EDA90核对：** 仅本地；本轮未分发像素；正文实际调用 `E20R03`；图–补表映射 `S22a;S22c`。原科学图件不变。
 
 **当前读者路线：** R16（仅本地或历史索引，见逐项披露清单）
 
@@ -426,13 +480,15 @@ M0 CA1 n31(16AD/15Control)，CA3 n30(15/15)，配对差分29人(14/15)，模型�
 
 **当前解释限制：** 排除no-op，部分缺失保留；IQGAP3六次过滤缺失不作生物零；稳号不是显著。
 
-**完整补表：** S22a（S22a仅本地／索引；见[披露清单](All211_Actual_Payload_Index_And_Local_Disclosure.tsv)），S22c（S22c仅本地／索引；见[披露清单](All211_Actual_Payload_Index_And_Local_Disclosure.tsv)）
+**完整补表：** S22a（S22a仅本地／索引；见[披露清单](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/All211_Actual_Payload_Index_And_Local_Disclosure.tsv)），S22c（S22c仅本地／索引；见[披露清单](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/All211_Actual_Payload_Index_And_Local_Disclosure.tsv)）
 
 **正文定位：** E20R03。原资产：F36。
 
-补图S28 完整81删除后稳号比例（S28仅本地／索引；见[披露清单](All57_Figure_Disclosure_Status.tsv)）
+补图S28 完整81删除后稳号比例（S28仅本地／索引；见[披露清单](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/All57_Figure_Disclosure_Status.tsv)）
 
 ## 补图S29 已讨论示例的全部供者删除
+
+**EDA90核对：** 仅本地；本轮未分发像素；正文实际调用 `E20R03`；图–补表映射 `S22a;S22b;S22c;S22d`。原科学图件不变。
 
 **当前读者路线：** R16（仅本地或历史索引，见逐项披露清单）
 
@@ -440,13 +496,15 @@ CSRP1 CA1、BZW2和PRPF4配对区域差是EDA17/18已经讨论的示例，不是
 
 **当前解释限制：** 仅为此前讨论示例，非本轮重选基因；M0/M5不是独立复制。
 
-**完整补表：** S22a（S22a仅本地／索引；见[披露清单](All211_Actual_Payload_Index_And_Local_Disclosure.tsv)），S22b（S22b仅本地／索引；见[披露清单](All211_Actual_Payload_Index_And_Local_Disclosure.tsv)），S22c（S22c仅本地／索引；见[披露清单](All211_Actual_Payload_Index_And_Local_Disclosure.tsv)），S22d（S22d仅本地／索引；见[披露清单](All211_Actual_Payload_Index_And_Local_Disclosure.tsv)）
+**完整补表：** S22a（S22a仅本地／索引；见[披露清单](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/All211_Actual_Payload_Index_And_Local_Disclosure.tsv)），S22b（S22b仅本地／索引；见[披露清单](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/All211_Actual_Payload_Index_And_Local_Disclosure.tsv)），S22c（S22c仅本地／索引；见[披露清单](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/All211_Actual_Payload_Index_And_Local_Disclosure.tsv)），S22d（S22d仅本地／索引；见[披露清单](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/All211_Actual_Payload_Index_And_Local_Disclosure.tsv)）
 
 **正文定位：** E20R03;E20R04。原资产：F38。
 
-补图S29 已讨论示例的全部供者删除（S29仅本地／索引；见[披露清单](All57_Figure_Disclosure_Status.tsv)）
+补图S29 已讨论示例的全部供者删除（S29仅本地／索引；见[披露清单](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/All57_Figure_Disclosure_Status.tsv)）
 
 ## 补图S30 完整81直接脑库交互
+
+**EDA90核对：** 已公开原像素；正文实际调用 `E20R04`；图–补表映射 `S22e;S22f;S22g;S22h`。原科学图件不变。
 
 **当前读者路线：** R16（仅本地或历史索引，见逐项披露清单）
 
@@ -454,13 +512,15 @@ CSRP1 CA1、BZW2和PRPF4配对区域差是EDA17/18已经讨论的示例，不是
 
 **当前解释限制：** 原预设家族无通过，不能作等效；VA完整分层不可估计。
 
-**完整补表：** S22e（S22e仅本地／索引；见[披露清单](All211_Actual_Payload_Index_And_Local_Disclosure.tsv)），S22f（S22f仅本地／索引；见[披露清单](All211_Actual_Payload_Index_And_Local_Disclosure.tsv)），S22g（S22g仅本地／索引；见[披露清单](All211_Actual_Payload_Index_And_Local_Disclosure.tsv)），S22h（S22h仅本地／索引；见[披露清单](All211_Actual_Payload_Index_And_Local_Disclosure.tsv)）
+**完整补表：** S22e（S22e仅本地／索引；见[披露清单](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/All211_Actual_Payload_Index_And_Local_Disclosure.tsv)），S22f（S22f仅本地／索引；见[披露清单](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/All211_Actual_Payload_Index_And_Local_Disclosure.tsv)），S22g（S22g仅本地／索引；见[披露清单](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/All211_Actual_Payload_Index_And_Local_Disclosure.tsv)），S22h（S22h仅本地／索引；见[披露清单](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/All211_Actual_Payload_Index_And_Local_Disclosure.tsv)）
 
 **正文定位：** E20R04。原资产：F40。
 
-![补图S30 完整81直接脑库交互](../figures/S30_Supp_FigS30_Original_F40.png)
+![补图S30 完整81直接脑库交互](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/raw/c07775953aa8d395b6b79188d6053427bc0b4a26/figures/S30_Supp_FigS30_Original_F40.png)
 
 ## 补图S31 CSRP1探针与参考转录本范围
+
+**EDA90核对：** 已公开原像素；正文实际调用 `E20R06;E21R01;E21R02`；图–补表映射 `S23b;S23h;S23p;S23t`。原科学图件不变。
 
 **当前读者路线：** R17（仅本地或历史索引，见逐项披露清单）
 
@@ -468,11 +528,11 @@ CSRP1唯一原合格50nt目标序列ILMN_1811921在17条转录本上完全相同
 
 **当前解释限制：** GENCODE17/31与RefSeq4条范围不同，不代表脑内isoform表达或蛋白确认。
 
-**完整补表：** S23b（S23b仅本地／索引；见[披露清单](All211_Actual_Payload_Index_And_Local_Disclosure.tsv)），S23h（S23h仅本地／索引；见[披露清单](All211_Actual_Payload_Index_And_Local_Disclosure.tsv)），S23p（S23p仅本地／索引；见[披露清单](All211_Actual_Payload_Index_And_Local_Disclosure.tsv)），S23t（S23t仅本地／索引；见[披露清单](All211_Actual_Payload_Index_And_Local_Disclosure.tsv)）
+**完整补表：** S23b（S23b仅本地／索引；见[披露清单](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/All211_Actual_Payload_Index_And_Local_Disclosure.tsv)），S23h（S23h仅本地／索引；见[披露清单](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/All211_Actual_Payload_Index_And_Local_Disclosure.tsv)），S23p（S23p仅本地／索引；见[披露清单](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/All211_Actual_Payload_Index_And_Local_Disclosure.tsv)），S23t（S23t仅本地／索引；见[披露清单](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/All211_Actual_Payload_Index_And_Local_Disclosure.tsv)）
 
 **正文定位：** E20R06;E21R02。原资产：F42。
 
-![补图S31 CSRP1探针与参考转录本范围](../figures/S31_Supp_FigS31_Original_F42.png)
+![补图S31 CSRP1探针与参考转录本范围](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/raw/c07775953aa8d395b6b79188d6053427bc0b4a26/figures/S31_Supp_FigS31_Original_F42.png)
 
 # GSE122063新增补图
 
@@ -480,9 +540,11 @@ GSE122063仅为同31供者双脑区的批次敏感探索。原43 M0 BH为FC／TC
 
 ## 补图S32 供者脑区PCA
 
+**EDA90核对：** 仅本地；本轮未分发像素；正文实际调用 `E48M01`；图–补表映射 `S26i`。原科学图件不变。
+
 **当前读者路线：** GSE122063测量／批次探索支线，不增计17路线；证据按原补表链接读取。
 
-S32（S32仅本地／索引；见[披露清单](All57_Figure_Disclosure_Status.tsv)）
+S32（S32仅本地／索引；见[披露清单](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/All57_Figure_Disclosure_Status.tsv)）
 
 PCA为发布log2汇总尺度的描述，不是协变量调整或分组真值；同人两脑区不作为独立人。
 
@@ -494,9 +556,11 @@ GSE122063仅为同31供者双脑区的批次敏感探索。原43 M0 BH为FC／TC
 
 ## 补图S33 供者临床变量分布
 
+**EDA90核对：** 仅本地；本轮未分发像素；正文实际调用 `E48M01;E48R04`；图–补表映射 `S28a;S28b`。原科学图件不变。
+
 **当前读者路线：** GSE122063测量／批次探索支线，不增计17路线；证据按原补表链接读取。
 
-S33（S33仅本地／索引；见[披露清单](All57_Figure_Disclosure_Status.tsv)）
+S33（S33仅本地／索引；见[披露清单](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/All57_Figure_Disclosure_Status.tsv)）
 
 按GEO现有标签描述年龄、性别、PMI；缺1255供者与论文组别差异另列，不据图改组。
 
@@ -508,9 +572,11 @@ GSE122063仅为同31供者双脑区的批次敏感探索。原43 M0 BH为FC／TC
 
 ## 补图S34 完整81全部主情景
 
+**EDA90核对：** 已公开原像素；正文实际调用 `E48M01;E48R01`；图–补表映射 `S26i;S26j`。原科学图件不变。
+
 **当前读者路线：** GSE122063测量／批次探索支线，不增计17路线；证据按原补表链接读取。
 
-![S34](../figures/S34_F3_Complete81_AllPrimaryContexts.png)
+![S34](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/raw/c07775953aa8d395b6b79188d6053427bc0b4a26/figures/S34_F3_Complete81_AllPrimaryContexts.png)
 
 颜色为既有M0效应；AD、痴呆和区域交互各用原计划家族，完整81含AKR1C2缺失。
 
@@ -522,9 +588,11 @@ GSE122063仅为同31供者双脑区的批次敏感探索。原43 M0 BH为FC／TC
 
 ## 补图S35 AD与VaD全来源背景
 
+**EDA90核对：** 已公开原像素；正文实际调用 `E48M01;E48R01`；图–补表映射 `S26i;S26j`。原科学图件不变。
+
 **当前读者路线：** GSE122063测量／批次探索支线，不增计17路线；证据按原补表链接读取。
 
-![S35](../figures/S35_F4_AD_VaD_Context_AllGenes.png)
+![S35](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/raw/c07775953aa8d395b6b79188d6053427bc0b4a26/figures/S35_F4_AD_VaD_Context_AllGenes.png)
 
 全来源背景不改变候选家族。AD显著而VaD未显著不构成AD特异；直接AD–VaD及交互未获BH支持。
 
@@ -536,9 +604,11 @@ GSE122063仅为同31供者双脑区的批次敏感探索。原43 M0 BH为FC／TC
 
 ## 补图S36 原43供者留一效应范围
 
+**EDA90核对：** 已公开原像素；正文实际调用 `E48M03;E48R01`；图–补表映射 `S26k;S26l`。原科学图件不变。
+
 **当前读者路线：** GSE122063测量／批次探索支线，不增计17路线；证据按原补表链接读取。
 
-![S36](../figures/S36_F1_Original43_LODO_Effect_Ranges.png)
+![S36](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/raw/c07775953aa8d395b6b79188d6053427bc0b4a26/figures/S36_F1_Original43_LODO_Effect_Ranges.png)
 
 橙线为相关供者删除后β最小–最大范围，不是置信区间。蓝点／菱形为M0，菱形仅标原43预定AD家族BH；红色为至少一次点符号翻转。无供者据结果删除。
 
@@ -550,9 +620,11 @@ GSE122063仅为同31供者双脑区的批次敏感探索。原43 M0 BH为FC／TC
 
 ## 补图S37 完整81批次与重测敏感性
 
+**EDA90核对：** 已公开原像素；正文实际调用 `E48M03;E48R02`；图–补表映射 `S26k;S26l;S26m`。原科学图件不变。
+
 **当前读者路线：** GSE122063测量／批次探索支线，不增计17路线；证据按原补表链接读取。
 
-![S37](../figures/S37_F2_Complete81_Batch_Repeat_Effects.png)
+![S37](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/raw/c07775953aa8d395b6b79188d6053427bc0b4a26/figures/S37_F2_Complete81_Batch_Repeat_Effects.png)
 
 完整81×原M0／文件名日期／Load Key日期／slide／去5729重测模型的两脑区效应；星号为原43，点为对应模型原81家族BH。颜色98百分位截断、至少0.5；灰色AKR1C2。原43支持20／17对比0／0见S26l，不从图上混数q81与q43。
 
@@ -564,9 +636,11 @@ GSE122063仅为同31供者双脑区的批次敏感探索。原43 M0 BH为FC／TC
 
 ## 补图S38 完整81探针点方向
 
+**EDA90核对：** 已公开原像素；正文实际调用 `E48M04;E48R03`；图–补表映射 `S26k;S26l`。原科学图件不变。
+
 **当前读者路线：** GSE122063测量／批次探索支线，不增计17路线；证据按原补表链接读取。
 
-![S38](../figures/S38_F3_Complete81_Probe_Direction_Review.png)
+![S38](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/raw/c07775953aa8d395b6b79188d6053427bc0b4a26/figures/S38_F3_Complete81_Probe_Direction_Review.png)
 
 相反点效应探针数／合格探针数，无新探针P／FDR。单探针0／1不是复制，NA不是零；未证明异构体差异或交叉杂交。
 
@@ -578,9 +652,11 @@ GSE122063仅为同31供者双脑区的批次敏感探索。原43 M0 BH为FC／TC
 
 ## 补图S39 31供者slide贡献
 
+**EDA90核对：** 仅本地；本轮未分发像素；正文实际调用 `E48M03`；图–补表映射 `S26m;S28ac`。原科学图件不变。
+
 **当前读者路线：** GSE122063测量／批次探索支线，不增计17路线；证据按原补表链接读取。
 
-S39（S39仅本地／索引；见[披露清单](All57_Figure_Disclosure_Status.tsv)）
+S39（S39仅本地／索引；见[披露清单](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/All57_Figure_Disclosure_Status.tsv)）
 
 Frontal供者slide贡献，Temporal比例相同。136通道连接68数组；数组内同人不同脑区，无跨人数组。均值代理不恢复raw归一化；5729重测在原主分析保留。
 
@@ -592,13 +668,15 @@ GSE122063仅为同31供者双脑区的批次敏感探索。原43 M0 BH为FC／TC
 
 ## 补图S40 全来源唯一P1测量QC
 
+**EDA90核对：** 仅本地；本轮未分发像素；正文实际调用 `E54M01;E54R01`；图–补表映射 `S28j;S28k;S28l;S28m`。原科学图件不变。
+
 **当前读者路线：** GSE122063测量／批次探索支线，不增计17路线；证据按原补表链接读取。
 
 全部68数组／136通道及完整81／43的固定P1对作者发布尺度比较。高相关不代表尺度等价；同人脑区与技术重复不是独立供者；AKR1C2保持缺失。
 
-完整原图例：EDA51图例（本地历史说明，未随本版分发；见[公开范围](PUBLICATION_AND_REPRODUCTION_SCOPE.md)）。完整表S27a–f／S28系列保留所有测量范围；不改变原病理／统计结论。
+完整原图例：EDA51图例（本地历史说明，未随本版分发；见[公开范围](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/PUBLICATION_AND_REPRODUCTION_SCOPE.md)）。完整表S27a–f／S28系列保留所有测量范围；不改变原病理／统计结论。
 
-补图S40 全来源唯一P1测量QC（S40仅本地／索引；见[披露清单](All57_Figure_Disclosure_Status.tsv)）
+补图S40 全来源唯一P1测量QC（S40仅本地／索引；见[披露清单](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/All57_Figure_Disclosure_Status.tsv)）
 
 **EDA84补齐的正文定位：** E54M01;E54R01。
 
@@ -606,13 +684,15 @@ GSE122063仅为同31供者双脑区的批次敏感探索。原43 M0 BH为FC／TC
 
 ## 补图S41 完整81与43测量偏移
 
+**EDA90核对：** 已公开原像素；正文实际调用 `E54M01;E54R01`；图–补表映射 `S28k;S28r`。原科学图件不变。
+
 **当前读者路线：** GSE122063测量／批次探索支线，不增计17路线；证据按原补表链接读取。
 
 全部68数组／136通道及完整81／43的固定P1对作者发布尺度比较。高相关不代表尺度等价；同人脑区与技术重复不是独立供者；AKR1C2保持缺失。
 
-完整原图例：EDA51图例（本地历史说明，未随本版分发；见[公开范围](PUBLICATION_AND_REPRODUCTION_SCOPE.md)）。完整表S27a–f／S28系列保留所有测量范围；不改变原病理／统计结论。
+完整原图例：EDA51图例（本地历史说明，未随本版分发；见[公开范围](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/PUBLICATION_AND_REPRODUCTION_SCOPE.md)）。完整表S27a–f／S28系列保留所有测量范围；不改变原病理／统计结论。
 
-![补图S41 完整81与43测量偏移](../figures/S41_EDA51_Complete81_43_Measurement_Discrepancy.png)
+![补图S41 完整81与43测量偏移](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/raw/c07775953aa8d395b6b79188d6053427bc0b4a26/figures/S41_EDA51_Complete81_43_Measurement_Discrepancy.png)
 
 **EDA84补齐的正文定位：** E54M01;E54R01。
 
@@ -620,41 +700,47 @@ GSE122063仅为同31供者双脑区的批次敏感探索。原43 M0 BH为FC／TC
 
 ## 补图S42 低信号及MSE分解
 
+**EDA90核对：** 已公开原像素；正文实际调用 `E54M02;E54R02`；图–补表映射 `S28o;S28p;S28q`。原科学图件不变。
+
 **当前读者路线：** GSE122063测量／批次探索支线，不增计17路线；证据按原补表链接读取。
 
 沿用58,717探针全来源10层，展示平均偏移、中心误差、SD比及MSE分解；分量是代数恒等式，不是处理步骤的因果贡献或校正矩阵。所有158候选探针和多探针层跨度保留。
 
-完整原图例：EDA52图例（本地历史说明，未随本版分发；见[公开范围](PUBLICATION_AND_REPRODUCTION_SCOPE.md)）。完整表S27a–f／S28系列保留所有测量范围；不改变原病理／统计结论。
+完整原图例：EDA52图例（本地历史说明，未随本版分发；见[公开范围](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/PUBLICATION_AND_REPRODUCTION_SCOPE.md)）。完整表S27a–f／S28系列保留所有测量范围；不改变原病理／统计结论。
 
-![补图S42 低信号及MSE分解](../figures/S42_EDA52_AllSource_LowSignal_And_Offset.png)
+![补图S42 低信号及MSE分解](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/raw/c07775953aa8d395b6b79188d6053427bc0b4a26/figures/S42_EDA52_AllSource_LowSignal_And_Offset.png)
 
 **EDA84补齐的正文定位：** E54M02;E54R02。
 
-**EDA84补齐的完整补表导航：** [S28o](../supplements/S28o_All10_FixedDecile_Background_QC_And_Measurement_Summary.tsv)；S28p（仅本地或历史索引，见逐项披露清单）；[S28q](../supplements/S28q_All20926_Gene_Bias_CenteredError_And_RelativeScale.tsv)。
+**EDA84补齐的完整补表导航：** [S28o](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S28o_All10_FixedDecile_Background_QC_And_Measurement_Summary.tsv)；S28p（仅本地或历史索引，见逐项披露清单）；[S28q](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S28q_All20926_Gene_Bias_CenteredError_And_RelativeScale.tsv)。
 
 ## 补图S43 完整81与43中心误差
 
+**EDA90核对：** 已公开原像素；正文实际调用 `E54M02;E54R02`；图–补表映射 `S28p;S28q`。原科学图件不变。
+
 **当前读者路线：** GSE122063测量／批次探索支线，不增计17路线；证据按原补表链接读取。
 
 沿用58,717探针全来源10层，展示平均偏移、中心误差、SD比及MSE分解；分量是代数恒等式，不是处理步骤的因果贡献或校正矩阵。所有158候选探针和多探针层跨度保留。
 
-完整原图例：EDA52图例（本地历史说明，未随本版分发；见[公开范围](PUBLICATION_AND_REPRODUCTION_SCOPE.md)）。完整表S27a–f／S28系列保留所有测量范围；不改变原病理／统计结论。
+完整原图例：EDA52图例（本地历史说明，未随本版分发；见[公开范围](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/PUBLICATION_AND_REPRODUCTION_SCOPE.md)）。完整表S27a–f／S28系列保留所有测量范围；不改变原病理／统计结论。
 
-![补图S43 完整81与43中心误差](../figures/S43_EDA52_Complete81_43_Full_And_Centered_Error.png)
+![补图S43 完整81与43中心误差](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/raw/c07775953aa8d395b6b79188d6053427bc0b4a26/figures/S43_EDA52_Complete81_43_Full_And_Centered_Error.png)
 
 **EDA84补齐的正文定位：** E54M02;E54R02。
 
-**EDA84补齐的完整补表导航：** S28p（仅本地或历史索引，见逐项披露清单）；[S28q](../supplements/S28q_All20926_Gene_Bias_CenteredError_And_RelativeScale.tsv)。
+**EDA84补齐的完整补表导航：** S28p（仅本地或历史索引，见逐项披露清单）；[S28q](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/supplements/S28q_All20926_Gene_Bias_CenteredError_And_RelativeScale.tsv)。
 
 ## 补图S44 供者留一和技术标签
+
+**EDA90核对：** 仅本地；本轮未分发像素；正文实际调用 `E54M03;E54M04;E54R03`；图–补表映射 `S28y;S28ac;S28af`。原科学图件不变。
 
 **当前读者路线：** GSE122063测量／批次探索支线，不增计17路线；证据按原补表链接读取。
 
 点为全样本、线或阴影为全31次供者删除min–max，不是置信区间。删除同人全部脑区／染料／重复；日期为FeatureExtractor软件事件，16技术组并非独立湿实验batch。
 
-完整原图例：EDA53图例（本地历史说明，未随本版分发；见[公开范围](PUBLICATION_AND_REPRODUCTION_SCOPE.md)）。完整表S27a–f／S28系列保留所有测量范围；不改变原病理／统计结论。
+完整原图例：EDA53图例（本地历史说明，未随本版分发；见[公开范围](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/PUBLICATION_AND_REPRODUCTION_SCOPE.md)）。完整表S27a–f／S28系列保留所有测量范围；不改变原病理／统计结论。
 
-补图S44 供者留一和技术标签（S44仅本地／索引；见[披露清单](All57_Figure_Disclosure_Status.tsv)）
+补图S44 供者留一和技术标签（S44仅本地／索引；见[披露清单](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/All57_Figure_Disclosure_Status.tsv)）
 
 **EDA84补齐的正文定位：** E54M03;E54M04;E54R03。
 
@@ -662,13 +748,15 @@ GSE122063仅为同31供者双脑区的批次敏感探索。原43 M0 BH为FC／TC
 
 ## 补图S45 完整81与43留一范围
 
+**EDA90核对：** 已公开原像素；正文实际调用 `E54M03;E54R03`；图–补表映射 `S28x;S28y`。原科学图件不变。
+
 **当前读者路线：** GSE122063测量／批次探索支线，不增计17路线；证据按原补表链接读取。
 
 点为全样本、线或阴影为全31次供者删除min–max，不是置信区间。删除同人全部脑区／染料／重复；日期为FeatureExtractor软件事件，16技术组并非独立湿实验batch。
 
-完整原图例：EDA53图例（本地历史说明，未随本版分发；见[公开范围](PUBLICATION_AND_REPRODUCTION_SCOPE.md)）。完整表S27a–f／S28系列保留所有测量范围；不改变原病理／统计结论。
+完整原图例：EDA53图例（本地历史说明，未随本版分发；见[公开范围](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/blob/c07775953aa8d395b6b79188d6053427bc0b4a26/docs/PUBLICATION_AND_REPRODUCTION_SCOPE.md)）。完整表S27a–f／S28系列保留所有测量范围；不改变原病理／统计结论。
 
-![补图S45 完整81与43留一范围](../figures/S45_EDA53_Complete81_43_DonorLeaveOne_Measurement_Ranges.png)
+![补图S45 完整81与43留一范围](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/raw/c07775953aa8d395b6b79188d6053427bc0b4a26/figures/S45_EDA53_Complete81_43_DonorLeaveOne_Measurement_Ranges.png)
 
 **EDA84补齐的正文定位：** E54M03;E54R03。
 

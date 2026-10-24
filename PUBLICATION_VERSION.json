@@ -1,8 +1,8 @@
 {
-  "version": "RP241_EDA89_2026-10-24",
+  "version": "RP241_EDA91_2026-10-24",
   "snapshot_date": "2026-10-24",
-  "parent_commit": "3dd32dbc7d9ce6a6ecbdff8676c5978470556fdc",
-  "parent_tree": "d0a0d7da8bf66b9b844cb447f1167b8338eb6647",
+  "parent_commit": "c07775953aa8d395b6b79188d6053427bc0b4a26",
+  "parent_tree": "02ba38c36cd215b736a9b1421b6d0d17df7d1268",
   "source_candidate_manifest_sha256": "f9d37aee9e38f4e778254981eb9fb75b52fa20cf22ae0b173d5fbbf6ab833cb1",
   "public_gene_rows": [
     81,
@@ -19,5 +19,19 @@
   "causal_upgrade": false,
   "commit_identity": "Use the Git commit containing this file; no self-referential commit hash is embedded",
   "new_DOI": null,
-  "new_license": null
+  "new_license": null,
+  "actual_submission_figures": 55,
+  "actual_public_submission_images": 41,
+  "actual_local_only_submission_images": 14,
+  "historical_background_images": 2,
+  "actual_local_submission_table_files": 211,
+  "public_manuscript_word": "docs/AD_Glioma_RP241_EDA90_PublicCommit_Submission_Aligned_Manuscript_2026-10-24.docx",
+  "manuscript_word_sha256": "426ec5882e232eba7384cbf7340621f77795d1dd492bf2dcaff9557495be99c8",
+  "Word_render_QA_source": "EDA90_WPS16_PAGES_LITERAL_BYTES_REUSED",
+  "manuscript_paragraphs": 104,
+  "reference_count": 29,
+  "figure_paragraph_metadata_corrections": 5,
+  "local_full_submission_bundle_published": false,
+  "target_journal": null,
+  "journal_submitted": false
 }

@@ -21,3 +21,6 @@ __pycache__/
 private/
 controlled/
 applications/
+
+# Only the hash-reviewed EDA90 manuscript is public; other DOCX remain excluded.
+!docs/AD_Glioma_RP241_EDA90_PublicCommit_Submission_Aligned_Manuscript_2026-10-24.docx

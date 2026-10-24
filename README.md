@@ -1,10 +1,17 @@
 # MRQI AD Glioma evidence atlas
 
-**RP2.4.1 · EDA89 · 2026-10-24 · exploratory research**
+**RP2.4.1 · EDA91 · 2026-10-24 · exploratory research**
 
-本仓库提供阿尔茨海默病与胶质瘤／历史GBM反向表达研究的完整基因级汇总、限定解释、图表及来源诊断。本版以EDA88修正版准入清单迁移；没有新增DE、P／q、MR拟合或生物学验证。
+本仓库提供阿尔茨海默病与胶质瘤／历史GBM反向表达研究的完整基因级汇总、限定解释、图表及来源诊断。本版同步EDA90全文、Word和5处图–段映射修正，明确实际投稿集合及公开／本地范围；没有新增DE、P／q、MR拟合或生物学验证。
 
 目前证据支持**来源、脑区及历史肿瘤–宿主区室限定的探索性反向表达，伴随蛋白冲突、缺失和批次敏感性**。它不确立人群保护、现代WHO2021 IDH-wildtype GBM对健康人群的独立确认、同细胞拮抗或因果治疗靶点。
+
+## EDA91实际投稿集合
+
+- [公开Word](docs/AD_Glioma_RP241_EDA90_PublicCommit_Submission_Aligned_Manuscript_2026-10-24.docx)与[全文Markdown](docs/CURRENT_MANUSCRIPT_WORKING_DRAFT.md)为同一104段内容；Word原字节及16页WPS验收绑定于EDA90，不再重拟合或重排。
+- [实际55图清单](docs/EDA91_ACTUAL_FIGURE_SET.tsv)、[55图图例](docs/EDA91_CURRENT_SUBMISSION_LEGENDS.md)、[实际211表职责清单](docs/EDA91_ACTUAL_TABLE_SET.tsv)与[交付边界](docs/EDA91_ATTACHMENT_SCOPE.md)。
+- 55图=12主图组件+43补图，41幅有公开像素、14幅仅本地。另2幅S1/S5历史背景保留，故仓库仍含43幅汇总图。原编号不变，不以P值或方向筛选。
+- 本地211文件实装不等于211公开文件；此仓库仍只有35原汇总+2完整基因表派生映射。期刊尚未指定或提交。
 
 ## 阅读入口
 
@@ -58,18 +65,19 @@ Liu补表12／12的R2数值匹配abs-r形式、0／12匹配平方；保留原标
 
 ```bash
 python /path/to/MRQI-AD-Glioma/tools/verify_candidate.py
+python /path/to/MRQI-AD-Glioma/tools/verify_submission_alignment.py
 ```
 
 程序核查精确文件集合、bytes／SHA-256、完整基因身份与1207列、37身份字段排除、43图及35+2补表映射。允许Git本身的`.git`元数据，不将它当发布内容。`PUBLIC_MANIFEST.tsv`不包含自身；`PUBLIC_ASSET_PROVENANCE.tsv`记录逐文件来源。此程序不运行DE、MR或重建原统计模型。
 
 ## 版本 权利与引用
 
-版本标识见[PUBLICATION_VERSION.json](PUBLICATION_VERSION.json)，精确commit以所阅Git版本为准；父版本为2026-10-16的66文件快照。EDA88旧候选与来源审计说明属于其原日期的工作记录，不代表本版当前发布状态。[迁移说明](docs/EDA89_MIGRATION_AND_VERSION_NOTES.md)标出可用性文字修订及保留范围。
+版本标识见[PUBLICATION_VERSION.json](PUBLICATION_VERSION.json)，精确commit以所阅Git版本为准；直接父版本为[EDA89固定143文件提交](https://github.com/1209433622cz-maker/MRQI-AD-Glioma/tree/c07775953aa8d395b6b79188d6053427bc0b4a26)；更早66文件版本仍在Git历史。EDA88旧候选与来源审计说明属于其原日期的工作记录，不代表本版当前发布状态。[迁移说明](docs/EDA89_MIGRATION_AND_VERSION_NOTES.md)标出可用性文字修订及保留范围。
 
 项目没有新DOI、正式出版物、MIT／CC0或其他新代码许可证。公开可阅览不等于再许可；应分别引用原研究和固定commit。[权利说明](RIGHTS_AND_SCOPE.md)继续适用。原GEO／PRIDE／PDC数据、第三方全文、原XLSX、参考基因型、个体表、逐人删除记录、受控资料、DUC／签署、账户及凭据不随本版分发。
 
-下一步应核对投稿规格与最终图表引用，保持来源和估计对象边界。新的现代GBM对照／分型、GBM精确版本EAF及正式Steiger、因果靶点和真实功能证据仍缺；不能靠公开归档升级结论。本轮不申请新受控资料。
+本版已确定实际55图集合并在本地实装211表附件；其中14图、174表仍仅本地。下一步按目标期刊做连续编号映射和附件要求核对，保持来源和估计对象边界。新的现代GBM对照／分型、GBM精确版本EAF及正式Steiger、因果靶点和真实功能证据仍缺；不能靠公开归档升级结论。本轮不申请新受控资料。
 
 ### English summary
 
-This curated EDA89 snapshot preserves all81 genes and the original43, negative and conflicting findings, missingness and original multiplicity families. Thirty-seven linkable donor-identity columns are excluded while every retained result cell remains unchanged. It contains43 aggregate images and35 literal whole-table summaries plus2 gene-table derivative mappings;57 figure and211 supplement indexes are not claims of complete payload delivery. Archived MR, source-frequency and sample-version limitations are kept separate from expression evidence. Formal liability-scale Steiger was not run. The snapshot does not establish population protection, same-cell antagonism, a modern GBM-versus-healthy comparison or causal therapeutic targets. The validator checks files rather than replaying all models.
+This curated EDA91 manuscript-alignment snapshot preserves all81 genes and the original43, negative and conflicting findings, missingness and original multiplicity families. Thirty-seven linkable donor-identity columns are excluded while every retained result cell remains unchanged. It contains43 aggregate images and35 literal whole-table summaries plus2 gene-table derivative mappings;57 figure and211 supplement indexes are not claims of complete payload delivery. Archived MR, source-frequency and sample-version limitations are kept separate from expression evidence. Formal liability-scale Steiger was not run. The snapshot does not establish population protection, same-cell antagonism, a modern GBM-versus-healthy comparison or causal therapeutic targets. The validator checks files rather than replaying all models.
